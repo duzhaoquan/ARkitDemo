@@ -14,6 +14,31 @@
 		3E2AB0912B4D6C6600B7E741 /* ARKitDeamoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0902B4D6C6600B7E741 /* ARKitDeamoTests.swift */; };
 		3E2AB09B2B4D6C6600B7E741 /* ARKitDeamoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB09A2B4D6C6600B7E741 /* ARKitDeamoUITests.swift */; };
 		3E2AB09D2B4D6C6600B7E741 /* ARKitDeamoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB09C2B4D6C6600B7E741 /* ARKitDeamoUITestsLaunchTests.swift */; };
+		3E2AB0B82B4D6E1800B7E741 /* RealityKitEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0AA2B4D6E1700B7E741 /* RealityKitEventView.swift */; };
+		3E2AB0B92B4D6E1800B7E741 /* CheckingsPlaneShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0AB2B4D6E1700B7E741 /* CheckingsPlaneShowView.swift */; };
+		3E2AB0BA2B4D6E1800B7E741 /* BoneAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0AC2B4D6E1700B7E741 /* BoneAnimationView.swift */; };
+		3E2AB0BB2B4D6E1800B7E741 /* ARCoaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0AD2B4D6E1700B7E741 /* ARCoaching.swift */; };
+		3E2AB0BC2B4D6E1800B7E741 /* AnchorGeometryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0AE2B4D6E1700B7E741 /* AnchorGeometryView.swift */; };
+		3E2AB0BD2B4D6E1800B7E741 /* TransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0AF2B4D6E1700B7E741 /* TransformView.swift */; };
+		3E2AB0BE2B4D6E1800B7E741 /* AsyncLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0B02B4D6E1700B7E741 /* AsyncLoadView.swift */; };
+		3E2AB0BF2B4D6E1800B7E741 /* PointLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0B12B4D6E1700B7E741 /* PointLight.swift */; };
+		3E2AB0C02B4D6E1800B7E741 /* ShapShoptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0B22B4D6E1800B7E741 /* ShapShoptView.swift */; };
+		3E2AB0C12B4D6E1800B7E741 /* ARGescherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0B32B4D6E1800B7E741 /* ARGescherView.swift */; };
+		3E2AB0C22B4D6E1800B7E741 /* RayCheckingAndGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0B42B4D6E1800B7E741 /* RayCheckingAndGestureView.swift */; };
+		3E2AB0C32B4D6E1800B7E741 /* DirectionalLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0B52B4D6E1800B7E741 /* DirectionalLight.swift */; };
+		3E2AB0C42B4D6E1800B7E741 /* SpotLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0B62B4D6E1800B7E741 /* SpotLight.swift */; };
+		3E2AB0C52B4D6E1800B7E741 /* GestureControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0B72B4D6E1800B7E741 /* GestureControlView.swift */; };
+		3E6F02A62B5A4F7A007BEF1B /* toy_robot_vintage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3E6F02A22B5A4F78007BEF1B /* toy_robot_vintage.usdz */; };
+		3E6F02A72B5A4F7A007BEF1B /* tv_retro.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3E6F02A32B5A4F79007BEF1B /* tv_retro.usdz */; };
+		3E6F02A82B5A4F7A007BEF1B /* objBook.arobject in Resources */ = {isa = PBXBuildFile; fileRef = 3E6F02A42B5A4F7A007BEF1B /* objBook.arobject */; };
+		3E6F02A92B5A4F7A007BEF1B /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3E6F02A52B5A4F7A007BEF1B /* toy_biplane.usdz */; };
+		3EDBF2412B50E92C000AC5FF /* Box_Texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2402B50E92C000AC5FF /* Box_Texture.jpg */; };
+		3EDBF2432B50E936000AC5FF /* AR_Placement_Indicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2422B50E936000AC5FF /* AR_Placement_Indicator.png */; };
+		3EDBF2452B50E942000AC5FF /* Surface_DIFFUSE.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2442B50E942000AC5FF /* Surface_DIFFUSE.png */; };
+		3EDBF2472B50EA56000AC5FF /* BaseChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDBF2462B50EA56000AC5FF /* BaseChapterView.swift */; };
+		3EDBF2492B57F23A000AC5FF /* toy_drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2482B57F23A000AC5FF /* toy_drummer.usdz */; };
+		3EDBF24C2B58F965000AC5FF /* FunctionalTechnology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDBF24B2B58F965000AC5FF /* FunctionalTechnology.swift */; };
+		3EDBF24E2B594300000AC5FF /* ImageChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDBF24D2B594300000AC5FF /* ImageChecking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +69,31 @@
 		3E2AB0962B4D6C6600B7E741 /* ARKitDeamoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARKitDeamoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E2AB09A2B4D6C6600B7E741 /* ARKitDeamoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitDeamoUITests.swift; sourceTree = "<group>"; };
 		3E2AB09C2B4D6C6600B7E741 /* ARKitDeamoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitDeamoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3E2AB0AA2B4D6E1700B7E741 /* RealityKitEventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealityKitEventView.swift; sourceTree = "<group>"; };
+		3E2AB0AB2B4D6E1700B7E741 /* CheckingsPlaneShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckingsPlaneShowView.swift; sourceTree = "<group>"; };
+		3E2AB0AC2B4D6E1700B7E741 /* BoneAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoneAnimationView.swift; sourceTree = "<group>"; };
+		3E2AB0AD2B4D6E1700B7E741 /* ARCoaching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARCoaching.swift; sourceTree = "<group>"; };
+		3E2AB0AE2B4D6E1700B7E741 /* AnchorGeometryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorGeometryView.swift; sourceTree = "<group>"; };
+		3E2AB0AF2B4D6E1700B7E741 /* TransformView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformView.swift; sourceTree = "<group>"; };
+		3E2AB0B02B4D6E1700B7E741 /* AsyncLoadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncLoadView.swift; sourceTree = "<group>"; };
+		3E2AB0B12B4D6E1700B7E741 /* PointLight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointLight.swift; sourceTree = "<group>"; };
+		3E2AB0B22B4D6E1800B7E741 /* ShapShoptView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapShoptView.swift; sourceTree = "<group>"; };
+		3E2AB0B32B4D6E1800B7E741 /* ARGescherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARGescherView.swift; sourceTree = "<group>"; };
+		3E2AB0B42B4D6E1800B7E741 /* RayCheckingAndGestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RayCheckingAndGestureView.swift; sourceTree = "<group>"; };
+		3E2AB0B52B4D6E1800B7E741 /* DirectionalLight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionalLight.swift; sourceTree = "<group>"; };
+		3E2AB0B62B4D6E1800B7E741 /* SpotLight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotLight.swift; sourceTree = "<group>"; };
+		3E2AB0B72B4D6E1800B7E741 /* GestureControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureControlView.swift; sourceTree = "<group>"; };
+		3E6F02A22B5A4F78007BEF1B /* toy_robot_vintage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_robot_vintage.usdz; sourceTree = "<group>"; };
+		3E6F02A32B5A4F79007BEF1B /* tv_retro.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tv_retro.usdz; sourceTree = "<group>"; };
+		3E6F02A42B5A4F7A007BEF1B /* objBook.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = objBook.arobject; sourceTree = "<group>"; };
+		3E6F02A52B5A4F7A007BEF1B /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
+		3EDBF2402B50E92C000AC5FF /* Box_Texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Box_Texture.jpg; sourceTree = "<group>"; };
+		3EDBF2422B50E936000AC5FF /* AR_Placement_Indicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AR_Placement_Indicator.png; sourceTree = "<group>"; };
+		3EDBF2442B50E942000AC5FF /* Surface_DIFFUSE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Surface_DIFFUSE.png; sourceTree = "<group>"; };
+		3EDBF2462B50EA56000AC5FF /* BaseChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseChapterView.swift; sourceTree = "<group>"; };
+		3EDBF2482B57F23A000AC5FF /* toy_drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer.usdz; sourceTree = "<group>"; };
+		3EDBF24B2B58F965000AC5FF /* FunctionalTechnology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalTechnology.swift; sourceTree = "<group>"; };
+		3EDBF24D2B594300000AC5FF /* ImageChecking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageChecking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +144,8 @@
 		3E2AB07E2B4D6C6300B7E741 /* ARKitDeamo */ = {
 			isa = PBXGroup;
 			children = (
+				3EDBF24A2B58F8A2000AC5FF /* FunctionalTechnology */,
+				3E2AB0A92B4D6DAA00B7E741 /* BaseChapter */,
 				3E2AB07F2B4D6C6300B7E741 /* ARKitDeamoApp.swift */,
 				3E2AB0812B4D6C6300B7E741 /* ContentView.swift */,
 				3E2AB0832B4D6C6600B7E741 /* Assets.xcassets */,
@@ -125,6 +177,53 @@
 				3E2AB09C2B4D6C6600B7E741 /* ARKitDeamoUITestsLaunchTests.swift */,
 			);
 			path = ARKitDeamoUITests;
+			sourceTree = "<group>";
+		};
+		3E2AB0A92B4D6DAA00B7E741 /* BaseChapter */ = {
+			isa = PBXGroup;
+			children = (
+				3EDBF23F2B50E916000AC5FF /* image */,
+				3E2AB0AD2B4D6E1700B7E741 /* ARCoaching.swift */,
+				3E2AB0B32B4D6E1800B7E741 /* ARGescherView.swift */,
+				3E2AB0B22B4D6E1800B7E741 /* ShapShoptView.swift */,
+				3E2AB0AB2B4D6E1700B7E741 /* CheckingsPlaneShowView.swift */,
+				3E2AB0B42B4D6E1800B7E741 /* RayCheckingAndGestureView.swift */,
+				3E2AB0B72B4D6E1800B7E741 /* GestureControlView.swift */,
+				3E2AB0AE2B4D6E1700B7E741 /* AnchorGeometryView.swift */,
+				3E2AB0AA2B4D6E1700B7E741 /* RealityKitEventView.swift */,
+				3E2AB0AC2B4D6E1700B7E741 /* BoneAnimationView.swift */,
+				3E2AB0B02B4D6E1700B7E741 /* AsyncLoadView.swift */,
+				3E2AB0B52B4D6E1800B7E741 /* DirectionalLight.swift */,
+				3E2AB0B12B4D6E1700B7E741 /* PointLight.swift */,
+				3E2AB0B62B4D6E1800B7E741 /* SpotLight.swift */,
+				3E2AB0AF2B4D6E1700B7E741 /* TransformView.swift */,
+				3EDBF2462B50EA56000AC5FF /* BaseChapterView.swift */,
+			);
+			path = BaseChapter;
+			sourceTree = "<group>";
+		};
+		3EDBF23F2B50E916000AC5FF /* image */ = {
+			isa = PBXGroup;
+			children = (
+				3EDBF2442B50E942000AC5FF /* Surface_DIFFUSE.png */,
+				3E6F02A42B5A4F7A007BEF1B /* objBook.arobject */,
+				3E6F02A52B5A4F7A007BEF1B /* toy_biplane.usdz */,
+				3E6F02A22B5A4F78007BEF1B /* toy_robot_vintage.usdz */,
+				3E6F02A32B5A4F79007BEF1B /* tv_retro.usdz */,
+				3EDBF2422B50E936000AC5FF /* AR_Placement_Indicator.png */,
+				3EDBF2402B50E92C000AC5FF /* Box_Texture.jpg */,
+				3EDBF2482B57F23A000AC5FF /* toy_drummer.usdz */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		3EDBF24A2B58F8A2000AC5FF /* FunctionalTechnology */ = {
+			isa = PBXGroup;
+			children = (
+				3EDBF24B2B58F965000AC5FF /* FunctionalTechnology.swift */,
+				3EDBF24D2B594300000AC5FF /* ImageChecking.swift */,
+			);
+			path = FunctionalTechnology;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +330,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EDBF2452B50E942000AC5FF /* Surface_DIFFUSE.png in Resources */,
+				3EDBF2432B50E936000AC5FF /* AR_Placement_Indicator.png in Resources */,
+				3E6F02A82B5A4F7A007BEF1B /* objBook.arobject in Resources */,
 				3E2AB0872B4D6C6600B7E741 /* Preview Assets.xcassets in Resources */,
+				3EDBF2412B50E92C000AC5FF /* Box_Texture.jpg in Resources */,
 				3E2AB0842B4D6C6600B7E741 /* Assets.xcassets in Resources */,
+				3E6F02A92B5A4F7A007BEF1B /* toy_biplane.usdz in Resources */,
+				3EDBF2492B57F23A000AC5FF /* toy_drummer.usdz in Resources */,
+				3E6F02A72B5A4F7A007BEF1B /* tv_retro.usdz in Resources */,
+				3E6F02A62B5A4F7A007BEF1B /* toy_robot_vintage.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +364,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E2AB0C22B4D6E1800B7E741 /* RayCheckingAndGestureView.swift in Sources */,
+				3EDBF24E2B594300000AC5FF /* ImageChecking.swift in Sources */,
+				3E2AB0C42B4D6E1800B7E741 /* SpotLight.swift in Sources */,
+				3EDBF24C2B58F965000AC5FF /* FunctionalTechnology.swift in Sources */,
 				3E2AB0822B4D6C6300B7E741 /* ContentView.swift in Sources */,
 				3E2AB0802B4D6C6300B7E741 /* ARKitDeamoApp.swift in Sources */,
+				3E2AB0BF2B4D6E1800B7E741 /* PointLight.swift in Sources */,
+				3E2AB0BE2B4D6E1800B7E741 /* AsyncLoadView.swift in Sources */,
+				3EDBF2472B50EA56000AC5FF /* BaseChapterView.swift in Sources */,
+				3E2AB0BD2B4D6E1800B7E741 /* TransformView.swift in Sources */,
+				3E2AB0C12B4D6E1800B7E741 /* ARGescherView.swift in Sources */,
+				3E2AB0BC2B4D6E1800B7E741 /* AnchorGeometryView.swift in Sources */,
+				3E2AB0B82B4D6E1800B7E741 /* RealityKitEventView.swift in Sources */,
+				3E2AB0C52B4D6E1800B7E741 /* GestureControlView.swift in Sources */,
+				3E2AB0BA2B4D6E1800B7E741 /* BoneAnimationView.swift in Sources */,
+				3E2AB0C02B4D6E1800B7E741 /* ShapShoptView.swift in Sources */,
+				3E2AB0B92B4D6E1800B7E741 /* CheckingsPlaneShowView.swift in Sources */,
+				3E2AB0C32B4D6E1800B7E741 /* DirectionalLight.swift in Sources */,
+				3E2AB0BB2B4D6E1800B7E741 /* ARCoaching.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,11 +549,13 @@
 				DEVELOPMENT_TEAM = 6245M2ZZ7W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "使用摄像头捕捉画面";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,11 +580,13 @@
 				DEVELOPMENT_TEAM = 6245M2ZZ7W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "使用摄像头捕捉画面";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

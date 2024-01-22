@@ -8,17 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var tabbar: TabBarState
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView{
+            BaseChapterView()
+                .environmentObject(tabbar)
+                .tabItem {
+                    Image(systemName: "goforward")
+                    Text("基础篇")
+                }.tag(0)
+            
+            FunctionalTechnology()
+                .environmentObject(tabbar)
+                .tabItem {
+                    Image(systemName: "rectangle.on.rectangle")
+                    Text("提高篇")
+                }.tag(1)
+            BaseChapterView()
+                .environmentObject(tabbar)
+                .tabItem {
+                    Image(systemName: "smiley")
+                    Text("实战篇")
+                }.tag(2)
         }
-        .padding()
+        
     }
 }
 
 #Preview {
     ContentView()
+}
+
+class TabBarState: ObservableObject{
+    @Published var hidden: Bool = false
 }
