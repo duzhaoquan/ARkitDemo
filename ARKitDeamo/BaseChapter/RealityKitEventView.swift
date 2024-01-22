@@ -56,7 +56,7 @@ extension ARView{
 //自定义实体类
 class CustomEntity: Entity, HasModel, HasAnchoring, HasCollision {
     var subscribes: [Cancellable] = []
-    required init(color: UIColor) {git
+    required init(color: UIColor) {
         super.init()
         //设置碰撞组件，可以和其他实体发生碰撞
         self.components.set(CollisionComponent(
