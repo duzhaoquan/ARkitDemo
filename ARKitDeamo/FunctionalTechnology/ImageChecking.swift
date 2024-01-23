@@ -19,7 +19,7 @@ struct ImageChecking: View {
                VStack{
                    Spacer()
                    HStack(spacing: 50){
-                       Button(action: {ImageChecking.arView?.changeObjectsLibrary()}) {
+                       Button(action: {ImageChecking.arView?.changeImagesLibrary()}) {
                            Text("切换图像库")
                                
                                .frame(width:150,height:50)
@@ -80,16 +80,16 @@ struct ImageCheckingContainer: UIViewRepresentable {
     
 }
 extension ARView {
-    func changeObjectsLibrary(){
+    func changeImagesLibrary(){
         
         let config = session.configuration as! ARImageTrackingConfiguration
         guard let detectedObjectsLib = ARReferenceImage.referenceImages(inGroupNamed: "ReferenceImageLibrary1", bundle: Bundle.main) else {
-            fatalError("无法加载参考物体库")
+            fatalError("无法加载参考物图像")
         }
         config.maximumNumberOfTrackedImages = 1
         config.trackingImages = detectedObjectsLib
         session.run(config, options:[.resetTracking,.removeExistingAnchors])
-        print("参考物体库切换成功")
+        print("参考图像库切换成功")
     }
     func addReferenceImage(){
       

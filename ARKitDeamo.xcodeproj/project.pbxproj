@@ -32,6 +32,9 @@
 		3E6F02A72B5A4F7A007BEF1B /* tv_retro.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3E6F02A32B5A4F79007BEF1B /* tv_retro.usdz */; };
 		3E6F02A82B5A4F7A007BEF1B /* objBook.arobject in Resources */ = {isa = PBXBuildFile; fileRef = 3E6F02A42B5A4F7A007BEF1B /* objBook.arobject */; };
 		3E6F02A92B5A4F7A007BEF1B /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3E6F02A52B5A4F7A007BEF1B /* toy_biplane.usdz */; };
+		3E8888292B5E6ED000127C96 /* jinhua.arobject in Resources */ = {isa = PBXBuildFile; fileRef = 3E8888282B5E6ED000127C96 /* jinhua.arobject */; };
+		3E88882B2B5E82BE00127C96 /* ObjectChceking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E88882A2B5E82BE00127C96 /* ObjectChceking.swift */; };
+		3E9ADBB72B5F94F600D2AECD /* ObjectScanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9ADBB62B5F94F600D2AECD /* ObjectScanning.swift */; };
 		3EDBF2412B50E92C000AC5FF /* Box_Texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2402B50E92C000AC5FF /* Box_Texture.jpg */; };
 		3EDBF2432B50E936000AC5FF /* AR_Placement_Indicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2422B50E936000AC5FF /* AR_Placement_Indicator.png */; };
 		3EDBF2452B50E942000AC5FF /* Surface_DIFFUSE.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2442B50E942000AC5FF /* Surface_DIFFUSE.png */; };
@@ -87,6 +90,9 @@
 		3E6F02A32B5A4F79007BEF1B /* tv_retro.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tv_retro.usdz; sourceTree = "<group>"; };
 		3E6F02A42B5A4F7A007BEF1B /* objBook.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = objBook.arobject; sourceTree = "<group>"; };
 		3E6F02A52B5A4F7A007BEF1B /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
+		3E8888282B5E6ED000127C96 /* jinhua.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = jinhua.arobject; sourceTree = "<group>"; };
+		3E88882A2B5E82BE00127C96 /* ObjectChceking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectChceking.swift; sourceTree = "<group>"; };
+		3E9ADBB62B5F94F600D2AECD /* ObjectScanning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectScanning.swift; sourceTree = "<group>"; };
 		3EDBF2402B50E92C000AC5FF /* Box_Texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Box_Texture.jpg; sourceTree = "<group>"; };
 		3EDBF2422B50E936000AC5FF /* AR_Placement_Indicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AR_Placement_Indicator.png; sourceTree = "<group>"; };
 		3EDBF2442B50E942000AC5FF /* Surface_DIFFUSE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Surface_DIFFUSE.png; sourceTree = "<group>"; };
@@ -207,6 +213,7 @@
 			children = (
 				3EDBF2442B50E942000AC5FF /* Surface_DIFFUSE.png */,
 				3E6F02A42B5A4F7A007BEF1B /* objBook.arobject */,
+				3E8888282B5E6ED000127C96 /* jinhua.arobject */,
 				3E6F02A52B5A4F7A007BEF1B /* toy_biplane.usdz */,
 				3E6F02A22B5A4F78007BEF1B /* toy_robot_vintage.usdz */,
 				3E6F02A32B5A4F79007BEF1B /* tv_retro.usdz */,
@@ -222,6 +229,8 @@
 			children = (
 				3EDBF24B2B58F965000AC5FF /* FunctionalTechnology.swift */,
 				3EDBF24D2B594300000AC5FF /* ImageChecking.swift */,
+				3E88882A2B5E82BE00127C96 /* ObjectChceking.swift */,
+				3E9ADBB62B5F94F600D2AECD /* ObjectScanning.swift */,
 			);
 			path = FunctionalTechnology;
 			sourceTree = "<group>";
@@ -339,6 +348,7 @@
 				3E6F02A92B5A4F7A007BEF1B /* toy_biplane.usdz in Resources */,
 				3EDBF2492B57F23A000AC5FF /* toy_drummer.usdz in Resources */,
 				3E6F02A72B5A4F7A007BEF1B /* tv_retro.usdz in Resources */,
+				3E8888292B5E6ED000127C96 /* jinhua.arobject in Resources */,
 				3E6F02A62B5A4F7A007BEF1B /* toy_robot_vintage.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +376,7 @@
 			files = (
 				3E2AB0C22B4D6E1800B7E741 /* RayCheckingAndGestureView.swift in Sources */,
 				3EDBF24E2B594300000AC5FF /* ImageChecking.swift in Sources */,
+				3E88882B2B5E82BE00127C96 /* ObjectChceking.swift in Sources */,
 				3E2AB0C42B4D6E1800B7E741 /* SpotLight.swift in Sources */,
 				3EDBF24C2B58F965000AC5FF /* FunctionalTechnology.swift in Sources */,
 				3E2AB0822B4D6C6300B7E741 /* ContentView.swift in Sources */,
@@ -376,6 +387,7 @@
 				3E2AB0BD2B4D6E1800B7E741 /* TransformView.swift in Sources */,
 				3E2AB0C12B4D6E1800B7E741 /* ARGescherView.swift in Sources */,
 				3E2AB0BC2B4D6E1800B7E741 /* AnchorGeometryView.swift in Sources */,
+				3E9ADBB72B5F94F600D2AECD /* ObjectScanning.swift in Sources */,
 				3E2AB0B82B4D6E1800B7E741 /* RealityKitEventView.swift in Sources */,
 				3E2AB0C52B4D6E1800B7E741 /* GestureControlView.swift in Sources */,
 				3E2AB0BA2B4D6E1800B7E741 /* BoneAnimationView.swift in Sources */,

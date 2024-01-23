@@ -6,6 +6,9 @@
   "resources" : [
     {
       "filename" : "Book.arobject"
+    },
+    {
+      "filename" : "jinhua.arobject"
     }
   ]
 }

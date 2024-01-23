@@ -13,7 +13,9 @@ struct FunctionalTechnology: View {
         listModel(title: "DirectionaLight", view: DirectionalLightView()),
         listModel(title: "PointLight", view: PointLightView()),
         listModel(title: "SpotLight", view: SpotLightView()),
-        listModel(title: "图像检测", view: ImageChecking())
+        listModel(title: "图像检测", view: ImageChecking()),
+        listModel(title: "3D物体检测", view: ObjectChceking()),
+        listModel(title: "3D物体扫描与检测", view: ObjectScanning())
     ]
     var body: some View {
         
