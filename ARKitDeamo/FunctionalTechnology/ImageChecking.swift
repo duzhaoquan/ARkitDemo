@@ -55,11 +55,12 @@ struct ImageChecking: View {
 struct ImageCheckingContainer: UIViewRepresentable {
     
     
-        
-    var dele = ARViewImageCheckingDelegate()
-    func makeUIView(context: Context) -> some ARView {
+    func makeUIView(context: Context) ->  ARView {
         let arView = ARView(frame: .zero)
-        
+        ImageChecking.arView = arView
+        return arView
+    }
+    func updateUIView(_ uiView: ARView, context: Context) {
         guard let images = ARReferenceImage.referenceImages(inGroupNamed: "ReferenceImageLibrary", bundle: Bundle.main) else {
             fatalError("无法加载图像")
         }
@@ -68,15 +69,45 @@ struct ImageCheckingContainer: UIViewRepresentable {
         config.maximumNumberOfTrackedImages = 1
         config.isAutoFocusEnabled = true//是否自动对焦
         
-        arView.session.run(config,options: [])
-        arView.session.delegate = dele
-        ImageChecking.arView = arView
-        return arView
-    }
-    func updateUIView(_ uiView: UIViewType, context: Context) {
-        
+        uiView.session.run(config,options: [])
+        uiView.session.delegate = context.coordinator
     }
     
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+    
+    class Coordinator: NSObject,ARSessionDelegate{
+        var parent: ImageCheckingContainer
+        init(_ parent: ImageCheckingContainer) {
+            self.parent = parent
+        }
+        public func session(_ session: ARSession, didAdd anchors: [ARAnchor]){
+           guard let pAnchor = anchors[0] as? ARImageAnchor else {
+              return
+            }
+            
+
+            let objectName =  pAnchor.referenceImage.name == "toy_drummer" ? "toy_drummer" : "toy_robot_vintage"
+            DispatchQueue.main.async {
+                do{
+                    let myModeEntity = try Entity.load(named: objectName)
+                    let objectEntity = AnchorEntity(anchor: pAnchor)
+                    objectEntity.addChild(myModeEntity)
+                    myModeEntity.playAnimation(myModeEntity.availableAnimations[0].repeat())
+                   
+                    ImageChecking.arView?.scene.addAnchor(objectEntity)
+                } catch {
+                    print("加载失败")
+                }
+                            
+            }
+            
+        }
+        func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
+            
+        }
+    }
     
 }
 extension ARView {
@@ -101,36 +132,5 @@ extension ARView {
         print("insert image OK")
     }
 }
-class ARViewImageCheckingDelegate: NSObject, ARSessionDelegate {
-    
-    public func session(_ session: ARSession, didAdd anchors: [ARAnchor]){
-       guard let pAnchor = anchors[0] as? ARImageAnchor else {
-          return
-        }
-        
-
-        let objectName =  pAnchor.referenceImage.name == "toy_drummer" ? "toy_drummer" : "toy_robot_vintage"
-        DispatchQueue.main.async {
-            do{
-                let myModeEntity = try Entity.load(named: objectName)
-                let objectEntity = AnchorEntity(anchor: pAnchor)
-                objectEntity.addChild(myModeEntity)
-                myModeEntity.playAnimation(myModeEntity.availableAnimations[0].repeat())
-               
-                ImageChecking.arView?.scene.addAnchor(objectEntity)
-            } catch {
-                print("加载失败")
-            }
-                        
-        }
-        
-    }
-    func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
-        
-    }
-   
-
-}
-
 
 
