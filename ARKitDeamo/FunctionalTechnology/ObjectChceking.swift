@@ -11,14 +11,14 @@ import RealityKit
 
 struct ObjectChceking: View {
     
-    static var arView: ARView?
+    @State var changeObject = false
     
      var body: some View {
-         ObjectChcekingContainer()
+         ObjectChcekingContainer(changeObject: changeObject)
            .overlay(
                VStack{
                    Spacer()
-                   Button(action: {ObjectChceking.arView?.changeObjectsLibrary()}) {
+                   Button(action: {changeObject.toggle()}) {
                        Text("切换物体库")
                            .frame(width:150,height:50)
                            .font(.system(size: 17))
@@ -38,27 +38,71 @@ struct ObjectChceking: View {
 }
 struct ObjectChcekingContainer: UIViewRepresentable {
     
-    
-        
-    var dele = ARViewObjectCheckingDelegate()
+    var changeObject = false
     func makeUIView(context: Context) -> some ARView {
         let arView = ARView(frame: .zero)
-        
-        guard let images = ARReferenceObject.referenceObjects(inGroupNamed: "ReferenceObjectsLibrary", bundle: Bundle.main) else {
-            fatalError("无法加载物体")
-        }
-        let config = ARWorldTrackingConfiguration()
-        config.detectionObjects = images
-        
-        arView.session.run(config,options: [])
-        arView.session.delegate = dele
-        ObjectChceking.arView = arView
         return arView
     }
     func updateUIView(_ uiView: UIViewType, context: Context) {
+        if changeObject {
+            guard let config = uiView.session.configuration as? ARWorldTrackingConfiguration else {
+                return
+            }
+            guard let detectedObjectsLib = ARReferenceObject.referenceObjects(inGroupNamed: "ReferenceObjectsLibrary1", bundle: Bundle.main) else {
+                fatalError("无法加载参考物体库")
+            }
+            config.maximumNumberOfTrackedImages = 1
+            config.detectionObjects = detectedObjectsLib
+            uiView.session.run(config, options:[.resetTracking,.removeExistingAnchors])
+            print("参考物体库切换成功")
+            
+            return
+        }
+        guard let images = ARReferenceObject.referenceObjects(inGroupNamed: "ReferenceObjectsLibrary", bundle: Bundle.main) else {
+            fatalError("无法加载物体")
+        }
+        print("参考物体库加载成功")
+        let config = ARWorldTrackingConfiguration()
+        config.detectionObjects = images
         
+        uiView.session.run(config,options: [])
+        context.coordinator.arView = uiView
+        uiView.session.delegate = context.coordinator
     }
     
+    func makeCoordinator() -> ObjectChcekingCoordinator {
+        ObjectChcekingCoordinator(self)
+    }
+    
+    class ObjectChcekingCoordinator: NSObject, ARSessionDelegate {
+        var parent: ObjectChcekingContainer
+        var arView: ARView? = nil
+        init(_ parent: ObjectChcekingContainer) {
+            self.parent = parent
+        }
+        public func session(_ session: ARSession, didAdd anchors: [ARAnchor]){
+           guard let pAnchor = anchors[0] as? ARObjectAnchor else {
+              return
+            }
+            
+
+            let objectName =  pAnchor.referenceObject.name == "jinhua" ? "toy_drummer" : "toy_robot_vintage"
+            DispatchQueue.main.async {
+                do{
+                    let myModeEntity = try Entity.load(named: objectName)
+                    let objectEntity = AnchorEntity(anchor: pAnchor)
+                    objectEntity.addChild(myModeEntity)
+                    myModeEntity.playAnimation(myModeEntity.availableAnimations[0].repeat())
+                   
+                    self.arView?.scene.addAnchor(objectEntity)
+                } catch {
+                    print("加载失败")
+                }
+                            
+            }
+            
+        }
+    }
     
 }
 extension ARView {
@@ -77,30 +121,4 @@ extension ARView {
     }
     
 }
-class ARViewObjectCheckingDelegate: NSObject, ARSessionDelegate {
-    
-    public func session(_ session: ARSession, didAdd anchors: [ARAnchor]){
-       guard let pAnchor = anchors[0] as? ARObjectAnchor else {
-          return
-        }
-        
 
-        let objectName =  pAnchor.referenceObject.name == "jinhua" ? "toy_drummer" : "toy_robot_vintage"
-        DispatchQueue.main.async {
-            do{
-                let myModeEntity = try Entity.load(named: objectName)
-                let objectEntity = AnchorEntity(anchor: pAnchor)
-                objectEntity.addChild(myModeEntity)
-                myModeEntity.playAnimation(myModeEntity.availableAnimations[0].repeat())
-               
-                ObjectChceking.arView?.scene.addAnchor(objectEntity)
-            } catch {
-                print("加载失败")
-            }
-                        
-        }
-        
-    }
-   
-
-}

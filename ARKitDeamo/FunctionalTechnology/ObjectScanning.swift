@@ -1,89 +1,10 @@
-////
-////  ObjectScanning.swift
-////  ARKitDeamo
-////
-////  Created by zhaoquan du on 2024/1/23.
-////
 //
-//import SwiftUI
-//import RealityKit
-//import ARKit
+//  ObjectScanning.swift
+//  ARKitDeamo
 //
-//struct ObjectScanning: View {
-//    static var arView: ARView?
-//    var body: some View {
-//        ObjectChcekingContainer()
-//    }
-//}
-//struct ObjectCheckingContainer : UIViewRepresentable{
-//    let dele = ARViewObjectScanCheckDelegate()
-//    func updateUIView(_ uiView: UIViewType, context: Context) {
-//        
-//    }
-//    
-//    func makeUIView(context: Context) -> some UIView {
-//    
-//        let arView = ARView(frame: .zero)
-//        let config1 = ARObjectScanningConfiguration()
-//        config1.planeDetection  = .horizontal
-//        arView.session.delegate = dele
-//        arView.session.run(config1, options: [.resetTracking])
-//        arView.session.createReferenceObject(transform: float4x4(), center: SIMD3<Float>(), extent: SIMD3<Float>()) { obj, error in
-//            if let referenceObject = obj {
-//                // Adjust the object's origin with the user-provided transform.
-////                self.scannedReferenceObject = referenceObject.applyingTransform(origin.simdTransform)
-////                self.scannedReferenceObject!.name = self.scannedObject.scanName
-//                creationFinished(referenceObject)
-//            } else {
-//                print("Error: Failed to create reference object. \(error!.localizedDescription)")
-//                //creationFinished(nil)
-//            }
-//            
-//        }
-//        ObjectScanning.arView = arView
-//        return arView
-//    }
-//    func creationFinished(_ scanedObject:ARReferenceObject) {
-//        guard let arView = ObjectScanning.arView else {
-//            return
-//        }
-//        let config = ARWorldTrackingConfiguration()
-//        config.detectionObjects = [scanedObject]
-//        
-//        arView.session.run(config,options: [])
-//        
-//        
-//    }
-//    
-//}
+//  Created by zhaoquan du on 2024/1/23.
 //
-//class ARViewObjectScanCheckDelegate: NSObject, ARSessionDelegate {
-//    
-//    public func session(_ session: ARSession, didAdd anchors: [ARAnchor]){
-//       guard let pAnchor = anchors[0] as? ARObjectAnchor else {
-//          return
-//        }
-//        
-//
-//        let objectName =  pAnchor.referenceObject.name == "jinhua" ? "toy_drummer" : "toy_robot_vintage"
-//        DispatchQueue.main.async {
-//            do{
-//                let myModeEntity = try Entity.load(named: objectName)
-//                let objectEntity = AnchorEntity(anchor: pAnchor)
-//                objectEntity.addChild(myModeEntity)
-//                myModeEntity.playAnimation(myModeEntity.availableAnimations[0].repeat())
-//               
-//                ObjectChceking.arView?.scene.addAnchor(objectEntity)
-//            } catch {
-//                print("加载失败")
-//            }
-//                        
-//        }
-//        
-//    }
-//   
-//
-//}
+
 
 
 import ARKit

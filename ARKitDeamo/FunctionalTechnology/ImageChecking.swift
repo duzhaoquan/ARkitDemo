@@ -8,18 +8,23 @@
 import SwiftUI
 import ARKit
 import RealityKit
+import Combine
 
 struct ImageChecking: View {
     
-    static var arView: ARView?
+    @State  var changeImage = false
+    @State  var addImage = false
     
      var body: some View {
-         ImageCheckingContainer()
+         ImageCheckingContainer(changeImage: $changeImage, addImage: $addImage)
            .overlay(
                VStack{
                    Spacer()
                    HStack(spacing: 50){
-                       Button(action: {ImageChecking.arView?.changeImagesLibrary()}) {
+                       Button(action: {
+                           changeImage = true
+                           addImage = false
+                       }) {
                            Text("切换图像库")
                                
                                .frame(width:150,height:50)
@@ -32,7 +37,8 @@ struct ImageChecking: View {
                        .cornerRadius(10)
                        
                        Button {
-                           ImageChecking.arView?.addReferenceImage()
+                           addImage = true
+                           changeImage = false
                        } label: {
                            Text("添加图像")
                                .frame(width: 150, height: 50)
@@ -54,13 +60,36 @@ struct ImageChecking: View {
 }
 struct ImageCheckingContainer: UIViewRepresentable {
     
-    
+    @Binding  var changeImage:Bool
+    @Binding  var addImage:Bool
     func makeUIView(context: Context) ->  ARView {
         let arView = ARView(frame: .zero)
-        ImageChecking.arView = arView
         return arView
     }
     func updateUIView(_ uiView: ARView, context: Context) {
+        
+        if changeImage {
+            let config = uiView.session.configuration as! ARImageTrackingConfiguration
+            guard let detectedObjectsLib = ARReferenceImage.referenceImages(inGroupNamed: "ReferenceImageLibrary1", bundle: Bundle.main) else {
+                fatalError("无法加载参考物图像")
+            }
+            config.maximumNumberOfTrackedImages = 1
+            config.trackingImages = detectedObjectsLib
+            uiView.session.run(config, options:[.resetTracking,.removeExistingAnchors])
+            print("参考图像库切换成功")
+            return
+        }
+        
+        if addImage {
+            guard let config = uiView.session.configuration as? ARImageTrackingConfiguration else {return}
+            guard let image = UIImage(named:"toy_biplane")?.cgImage else { return }
+            let referenceImage = ARReferenceImage(image,orientation: .up, physicalWidth: 0.15)
+            config.trackingImages.insert(referenceImage)
+            uiView.session.run(config, options: [])
+            print("insert image OK")
+            return
+        }
+        
         guard let images = ARReferenceImage.referenceImages(inGroupNamed: "ReferenceImageLibrary", bundle: Bundle.main) else {
             fatalError("无法加载图像")
         }
@@ -69,8 +98,10 @@ struct ImageCheckingContainer: UIViewRepresentable {
         config.maximumNumberOfTrackedImages = 1
         config.isAutoFocusEnabled = true//是否自动对焦
         
+        context.coordinator.arView = uiView
         uiView.session.run(config,options: [])
         uiView.session.delegate = context.coordinator
+        
     }
     
     func makeCoordinator() -> Coordinator {
@@ -79,6 +110,7 @@ struct ImageCheckingContainer: UIViewRepresentable {
     
     class Coordinator: NSObject,ARSessionDelegate{
         var parent: ImageCheckingContainer
+        var arView: ARView? = nil
         init(_ parent: ImageCheckingContainer) {
             self.parent = parent
         }
@@ -95,8 +127,8 @@ struct ImageCheckingContainer: UIViewRepresentable {
                     let objectEntity = AnchorEntity(anchor: pAnchor)
                     objectEntity.addChild(myModeEntity)
                     myModeEntity.playAnimation(myModeEntity.availableAnimations[0].repeat())
-                   
-                    ImageChecking.arView?.scene.addAnchor(objectEntity)
+                    
+                    self.arView?.scene.addAnchor(objectEntity)
                 } catch {
                     print("加载失败")
                 }
