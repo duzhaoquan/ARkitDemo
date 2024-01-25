@@ -35,6 +35,9 @@
 		3E8888292B5E6ED000127C96 /* jinhua.arobject in Resources */ = {isa = PBXBuildFile; fileRef = 3E8888282B5E6ED000127C96 /* jinhua.arobject */; };
 		3E88882B2B5E82BE00127C96 /* ObjectChceking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E88882A2B5E82BE00127C96 /* ObjectChceking.swift */; };
 		3E9ADBB72B5F94F600D2AECD /* ObjectScanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9ADBB62B5F94F600D2AECD /* ObjectScanning.swift */; };
+		3EB016E82B610647002000F7 /* FaceChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB016E72B610647002000F7 /* FaceChecking.swift */; };
+		3EB016EC2B61254E002000F7 /* face.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB016EB2B61254E002000F7 /* face.scnassets */; };
+		3EB016EE2B612A3A002000F7 /* FaceMask.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 3EB016ED2B612A3A002000F7 /* FaceMask.rcproject */; };
 		3EDBF2412B50E92C000AC5FF /* Box_Texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2402B50E92C000AC5FF /* Box_Texture.jpg */; };
 		3EDBF2432B50E936000AC5FF /* AR_Placement_Indicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2422B50E936000AC5FF /* AR_Placement_Indicator.png */; };
 		3EDBF2452B50E942000AC5FF /* Surface_DIFFUSE.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2442B50E942000AC5FF /* Surface_DIFFUSE.png */; };
@@ -93,6 +96,9 @@
 		3E8888282B5E6ED000127C96 /* jinhua.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = jinhua.arobject; sourceTree = "<group>"; };
 		3E88882A2B5E82BE00127C96 /* ObjectChceking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectChceking.swift; sourceTree = "<group>"; };
 		3E9ADBB62B5F94F600D2AECD /* ObjectScanning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectScanning.swift; sourceTree = "<group>"; };
+		3EB016E72B610647002000F7 /* FaceChecking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceChecking.swift; sourceTree = "<group>"; };
+		3EB016EB2B61254E002000F7 /* face.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = face.scnassets; sourceTree = "<group>"; };
+		3EB016ED2B612A3A002000F7 /* FaceMask.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = FaceMask.rcproject; sourceTree = "<group>"; };
 		3EDBF2402B50E92C000AC5FF /* Box_Texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Box_Texture.jpg; sourceTree = "<group>"; };
 		3EDBF2422B50E936000AC5FF /* AR_Placement_Indicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AR_Placement_Indicator.png; sourceTree = "<group>"; };
 		3EDBF2442B50E942000AC5FF /* Surface_DIFFUSE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Surface_DIFFUSE.png; sourceTree = "<group>"; };
@@ -150,6 +156,7 @@
 		3E2AB07E2B4D6C6300B7E741 /* ARKitDeamo */ = {
 			isa = PBXGroup;
 			children = (
+				3EB016ED2B612A3A002000F7 /* FaceMask.rcproject */,
 				3EDBF24A2B58F8A2000AC5FF /* FunctionalTechnology */,
 				3E2AB0A92B4D6DAA00B7E741 /* BaseChapter */,
 				3E2AB07F2B4D6C6300B7E741 /* ARKitDeamoApp.swift */,
@@ -211,6 +218,7 @@
 		3EDBF23F2B50E916000AC5FF /* image */ = {
 			isa = PBXGroup;
 			children = (
+				3EB016EB2B61254E002000F7 /* face.scnassets */,
 				3EDBF2442B50E942000AC5FF /* Surface_DIFFUSE.png */,
 				3E6F02A42B5A4F7A007BEF1B /* objBook.arobject */,
 				3E8888282B5E6ED000127C96 /* jinhua.arobject */,
@@ -231,6 +239,7 @@
 				3EDBF24D2B594300000AC5FF /* ImageChecking.swift */,
 				3E88882A2B5E82BE00127C96 /* ObjectChceking.swift */,
 				3E9ADBB62B5F94F600D2AECD /* ObjectScanning.swift */,
+				3EB016E72B610647002000F7 /* FaceChecking.swift */,
 			);
 			path = FunctionalTechnology;
 			sourceTree = "<group>";
@@ -342,6 +351,7 @@
 				3EDBF2452B50E942000AC5FF /* Surface_DIFFUSE.png in Resources */,
 				3EDBF2432B50E936000AC5FF /* AR_Placement_Indicator.png in Resources */,
 				3E6F02A82B5A4F7A007BEF1B /* objBook.arobject in Resources */,
+				3EB016EC2B61254E002000F7 /* face.scnassets in Resources */,
 				3E2AB0872B4D6C6600B7E741 /* Preview Assets.xcassets in Resources */,
 				3EDBF2412B50E92C000AC5FF /* Box_Texture.jpg in Resources */,
 				3E2AB0842B4D6C6600B7E741 /* Assets.xcassets in Resources */,
@@ -378,6 +388,7 @@
 				3EDBF24E2B594300000AC5FF /* ImageChecking.swift in Sources */,
 				3E88882B2B5E82BE00127C96 /* ObjectChceking.swift in Sources */,
 				3E2AB0C42B4D6E1800B7E741 /* SpotLight.swift in Sources */,
+				3EB016E82B610647002000F7 /* FaceChecking.swift in Sources */,
 				3EDBF24C2B58F965000AC5FF /* FunctionalTechnology.swift in Sources */,
 				3E2AB0822B4D6C6300B7E741 /* ContentView.swift in Sources */,
 				3E2AB0802B4D6C6300B7E741 /* ARKitDeamoApp.swift in Sources */,
@@ -387,6 +398,7 @@
 				3E2AB0BD2B4D6E1800B7E741 /* TransformView.swift in Sources */,
 				3E2AB0C12B4D6E1800B7E741 /* ARGescherView.swift in Sources */,
 				3E2AB0BC2B4D6E1800B7E741 /* AnchorGeometryView.swift in Sources */,
+				3EB016EE2B612A3A002000F7 /* FaceMask.rcproject in Sources */,
 				3E9ADBB72B5F94F600D2AECD /* ObjectScanning.swift in Sources */,
 				3E2AB0B82B4D6E1800B7E741 /* RealityKitEventView.swift in Sources */,
 				3E2AB0C52B4D6E1800B7E741 /* GestureControlView.swift in Sources */,
