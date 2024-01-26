@@ -38,6 +38,11 @@
 		3EB016E82B610647002000F7 /* FaceChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB016E72B610647002000F7 /* FaceChecking.swift */; };
 		3EB016EC2B61254E002000F7 /* face.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB016EB2B61254E002000F7 /* face.scnassets */; };
 		3EB016EE2B612A3A002000F7 /* FaceMask.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 3EB016ED2B612A3A002000F7 /* FaceMask.rcproject */; };
+		3EB016F02B625DF2002000F7 /* BlendShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB016EF2B625DF2002000F7 /* BlendShapeView.swift */; };
+		3EB016F22B6261E8002000F7 /* BlendShapeFace.scn in Resources */ = {isa = PBXBuildFile; fileRef = 3EB016F12B6261E8002000F7 /* BlendShapeFace.scn */; };
+		3EB016F52B627EB4002000F7 /* RobotHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB016F32B627EB3002000F7 /* RobotHead.swift */; };
+		3EB016F62B627EB4002000F7 /* robotHead.reality in Resources */ = {isa = PBXBuildFile; fileRef = 3EB016F42B627EB4002000F7 /* robotHead.reality */; };
+		3EB016F82B62889C002000F7 /* BlendShapeRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB016F72B62889C002000F7 /* BlendShapeRobot.swift */; };
 		3EDBF2412B50E92C000AC5FF /* Box_Texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2402B50E92C000AC5FF /* Box_Texture.jpg */; };
 		3EDBF2432B50E936000AC5FF /* AR_Placement_Indicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2422B50E936000AC5FF /* AR_Placement_Indicator.png */; };
 		3EDBF2452B50E942000AC5FF /* Surface_DIFFUSE.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2442B50E942000AC5FF /* Surface_DIFFUSE.png */; };
@@ -99,6 +104,11 @@
 		3EB016E72B610647002000F7 /* FaceChecking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceChecking.swift; sourceTree = "<group>"; };
 		3EB016EB2B61254E002000F7 /* face.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = face.scnassets; sourceTree = "<group>"; };
 		3EB016ED2B612A3A002000F7 /* FaceMask.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = FaceMask.rcproject; sourceTree = "<group>"; };
+		3EB016EF2B625DF2002000F7 /* BlendShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendShapeView.swift; sourceTree = "<group>"; };
+		3EB016F12B6261E8002000F7 /* BlendShapeFace.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = BlendShapeFace.scn; sourceTree = "<group>"; };
+		3EB016F32B627EB3002000F7 /* RobotHead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RobotHead.swift; sourceTree = "<group>"; };
+		3EB016F42B627EB4002000F7 /* robotHead.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = robotHead.reality; sourceTree = "<group>"; };
+		3EB016F72B62889C002000F7 /* BlendShapeRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendShapeRobot.swift; sourceTree = "<group>"; };
 		3EDBF2402B50E92C000AC5FF /* Box_Texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Box_Texture.jpg; sourceTree = "<group>"; };
 		3EDBF2422B50E936000AC5FF /* AR_Placement_Indicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AR_Placement_Indicator.png; sourceTree = "<group>"; };
 		3EDBF2442B50E942000AC5FF /* Surface_DIFFUSE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Surface_DIFFUSE.png; sourceTree = "<group>"; };
@@ -218,6 +228,7 @@
 		3EDBF23F2B50E916000AC5FF /* image */ = {
 			isa = PBXGroup;
 			children = (
+				3EB016F12B6261E8002000F7 /* BlendShapeFace.scn */,
 				3EB016EB2B61254E002000F7 /* face.scnassets */,
 				3EDBF2442B50E942000AC5FF /* Surface_DIFFUSE.png */,
 				3E6F02A42B5A4F7A007BEF1B /* objBook.arobject */,
@@ -240,6 +251,10 @@
 				3E88882A2B5E82BE00127C96 /* ObjectChceking.swift */,
 				3E9ADBB62B5F94F600D2AECD /* ObjectScanning.swift */,
 				3EB016E72B610647002000F7 /* FaceChecking.swift */,
+				3EB016EF2B625DF2002000F7 /* BlendShapeView.swift */,
+				3EB016F42B627EB4002000F7 /* robotHead.reality */,
+				3EB016F32B627EB3002000F7 /* RobotHead.swift */,
+				3EB016F72B62889C002000F7 /* BlendShapeRobot.swift */,
 			);
 			path = FunctionalTechnology;
 			sourceTree = "<group>";
@@ -352,6 +367,7 @@
 				3EDBF2432B50E936000AC5FF /* AR_Placement_Indicator.png in Resources */,
 				3E6F02A82B5A4F7A007BEF1B /* objBook.arobject in Resources */,
 				3EB016EC2B61254E002000F7 /* face.scnassets in Resources */,
+				3EB016F22B6261E8002000F7 /* BlendShapeFace.scn in Resources */,
 				3E2AB0872B4D6C6600B7E741 /* Preview Assets.xcassets in Resources */,
 				3EDBF2412B50E92C000AC5FF /* Box_Texture.jpg in Resources */,
 				3E2AB0842B4D6C6600B7E741 /* Assets.xcassets in Resources */,
@@ -360,6 +376,7 @@
 				3E6F02A72B5A4F7A007BEF1B /* tv_retro.usdz in Resources */,
 				3E8888292B5E6ED000127C96 /* jinhua.arobject in Resources */,
 				3E6F02A62B5A4F7A007BEF1B /* toy_robot_vintage.usdz in Resources */,
+				3EB016F62B627EB4002000F7 /* robotHead.reality in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EB016F02B625DF2002000F7 /* BlendShapeView.swift in Sources */,
 				3E2AB0C22B4D6E1800B7E741 /* RayCheckingAndGestureView.swift in Sources */,
 				3EDBF24E2B594300000AC5FF /* ImageChecking.swift in Sources */,
 				3E88882B2B5E82BE00127C96 /* ObjectChceking.swift in Sources */,
@@ -395,6 +413,7 @@
 				3E2AB0BF2B4D6E1800B7E741 /* PointLight.swift in Sources */,
 				3E2AB0BE2B4D6E1800B7E741 /* AsyncLoadView.swift in Sources */,
 				3EDBF2472B50EA56000AC5FF /* BaseChapterView.swift in Sources */,
+				3EB016F82B62889C002000F7 /* BlendShapeRobot.swift in Sources */,
 				3E2AB0BD2B4D6E1800B7E741 /* TransformView.swift in Sources */,
 				3E2AB0C12B4D6E1800B7E741 /* ARGescherView.swift in Sources */,
 				3E2AB0BC2B4D6E1800B7E741 /* AnchorGeometryView.swift in Sources */,
@@ -407,6 +426,7 @@
 				3E2AB0B92B4D6E1800B7E741 /* CheckingsPlaneShowView.swift in Sources */,
 				3E2AB0C32B4D6E1800B7E741 /* DirectionalLight.swift in Sources */,
 				3E2AB0BB2B4D6E1800B7E741 /* ARCoaching.swift in Sources */,
+				3EB016F52B627EB4002000F7 /* RobotHead.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

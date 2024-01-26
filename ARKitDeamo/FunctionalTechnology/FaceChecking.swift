@@ -55,6 +55,9 @@ struct FaceChecking: View {
         )
             .edgesIgnoringSafeArea(.all)
             .navigationTitle("人脸检测")
+            .onDisappear {
+                
+            }
     }
 }
 struct FaceMaskContainer : UIViewRepresentable{
@@ -82,6 +85,8 @@ struct FaceMaskContainer : UIViewRepresentable{
         }
         uiView.session.run(config,options: [.resetTracking, .removeExistingAnchors])
         context.coordinator.arView = uiView
+        
+        
         
         let gesture = UISwipeGestureRecognizer()
         gesture.direction = [.left,.right]
