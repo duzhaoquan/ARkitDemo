@@ -18,7 +18,9 @@ struct FunctionalTechnology: View {
         listModel(title: "3D物体扫描与检测", view: ObjectScanning()),
         listModel(title: "人脸检测", view: FaceChecking()),
         listModel(title: "BlendShape", view: BlendShapeView()),
-        listModel(title: "BlendShapeRobot", view: BlendShapeRobot())
+        listModel(title: "光照估计", view: LightEstimate()),
+        
+        
     ]
     var body: some View {
         

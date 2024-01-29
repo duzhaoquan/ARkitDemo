@@ -1,10 +1,10 @@
 //
-//  ContentView.swift
-//  Chapter3
+//  SpotLightView.swift
+//  ARKitDeamo
 //
-//  Created by Davidwang on 2020/3/7.
-//  Copyright © 2020 Davidwang. All rights reserved.
+//  Created by Zhaoquan on 2023/1/7.
 //
+
 
 import SwiftUI
 import RealityKit
@@ -12,7 +12,7 @@ import ARKit
 
 struct SpotLightView : View {
     var body: some View {
-        return ARViewContainer12().edgesIgnoringSafeArea(.all)
+        return ARViewContainer12().edgesIgnoringSafeArea(.all).navigationTitle("聚光")
     }
 }
 

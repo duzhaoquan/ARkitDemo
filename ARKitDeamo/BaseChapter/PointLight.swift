@@ -1,9 +1,8 @@
 //
-//  ContentView.swift
-//  Chapter3
+//  PointLightView.swift
+//  ARKitDeamo
 //
-//  Created by Davidwang on 2020/3/7.
-//  Copyright © 2020 Davidwang. All rights reserved.
+//  Created by Zhaoquan on 2023/1/7.
 //
 
 import SwiftUI
@@ -12,7 +11,7 @@ import ARKit
 
 struct PointLightView : View {
     var body: some View {
-        return ARViewContainer12().edgesIgnoringSafeArea(.all)
+        return ARViewContainer12().edgesIgnoringSafeArea(.all).navigationTitle("点光")
     }
 }
 
@@ -34,18 +33,27 @@ struct ARViewContainer12: UIViewRepresentable {
     }
 }
 
-var planeMesh12 = MeshResource.generatePlane(width: 0.8,depth: 0.8)
-var planeMaterial12 = SimpleMaterial(color:.white,isMetallic: false)
-var planeEntity12 = ModelEntity(mesh:planeMesh12,materials:[planeMaterial12])
+
 
 extension ARView {
     func createPlane12(){
         let planeAnchor = AnchorEntity(plane:.horizontal,classification: .any,minimumBounds: [0.3,0.3])
-        planeAnchor.addChild(planeEntity12)
+        
+        let planeMesh = MeshResource.generatePlane(width: 0.8,depth: 0.8)
+        let planeMaterial = SimpleMaterial(color:.white,isMetallic: false)
+        let planeEntity = ModelEntity(mesh:planeMesh,materials:[planeMaterial])
+        planeAnchor.addChild(planeEntity)
+        
+        let boxMesh = MeshResource.generateBox(size: 0.1)
+        let boxMaterial = SimpleMaterial(color:.white,isMetallic: false)
+        let boxEntity = ModelEntity(mesh:boxMesh,materials:[boxMaterial])
+        planeAnchor.addChild(boxEntity)
+        //添加点光源
         let l = PointLight()
         l.light = PointLightComponent(color: .green, intensity: 5000, attenuationRadius: 0.5)
-        l.position = [planeEntity12.position.x , planeEntity12.position.y + 0.1,planeEntity12.position.z+0.2]
+        l.position = [planeEntity.position.x , planeEntity.position.y + 0.5,planeEntity.position.z+0.2]
         l.move(to: l.transform, relativeTo: nil)
+        
         let lightAnchor = AnchorEntity(world: l.position)
         lightAnchor.components.set(l.light)
         self.scene.addAnchor(lightAnchor)

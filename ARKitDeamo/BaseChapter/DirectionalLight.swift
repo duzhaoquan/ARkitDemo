@@ -1,9 +1,8 @@
 //
-//  ContentView.swift
-//  Chapter3
+//  DirectionalLightView.swift
+//  ARKitDeamo
 //
-//  Created by Davidwang on 2020/3/7.
-//  Copyright © 2020 Davidwang. All rights reserved.
+//  Created by Zhaoquan on 2023/1/7.
 //
 
 import SwiftUI
@@ -12,7 +11,7 @@ import ARKit
 
 struct DirectionalLightView : View {
     var body: some View {
-        return ARViewContainer11().edgesIgnoringSafeArea(.all)
+        return ARViewContainer11().edgesIgnoringSafeArea(.all).navigationTitle("平行光")
     }
 }
 
@@ -27,6 +26,7 @@ struct ARViewContainer11: UIViewRepresentable {
         arView.session.run(config, options:[ ])
         arView.session.delegate = arView
         arView.createPlane11()
+        
         return arView
         
     }
@@ -51,10 +51,15 @@ extension ARView {
         tf.translation = SIMD3(tf.translation.x,tf.translation.y + 0.06,tf.translation.z)
         boxEntity11.move(to: tf, relativeTo: nil)
         planeAnchor.addChild(planeEntity11)
+        
+        //添加平行光源
         let directionalLight = DirectionalLight()
+        //光照强度
         directionalLight.light.intensity = 50000
+        //光照颜色
         directionalLight.light.color = UIColor.red
         directionalLight.light.isRealWorldProxy = false
+        
         directionalLight.look(at: [0, 0, 0], from: [0.01, 1, 0.01], relativeTo: nil)
         planeAnchor.addChild(directionalLight)
         self.scene.addAnchor(planeAnchor)
