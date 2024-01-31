@@ -44,6 +44,8 @@
 		3EB016F62B627EB4002000F7 /* robotHead.reality in Resources */ = {isa = PBXBuildFile; fileRef = 3EB016F42B627EB4002000F7 /* robotHead.reality */; };
 		3EB016F82B62889C002000F7 /* BlendShapeRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB016F72B62889C002000F7 /* BlendShapeRobot.swift */; };
 		3EB016FA2B678A4F002000F7 /* LightEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB016F92B678A4F002000F7 /* LightEstimate.swift */; };
+		3EB016FC2B68A1E1002000F7 /* EnvironmentTexturing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB016FB2B68A1E1002000F7 /* EnvironmentTexturing.swift */; };
+		3EB016FE2B68DBC6002000F7 /* ManualEnvirmentTexturing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB016FD2B68DBC6002000F7 /* ManualEnvirmentTexturing.swift */; };
 		3EDBF2412B50E92C000AC5FF /* Box_Texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2402B50E92C000AC5FF /* Box_Texture.jpg */; };
 		3EDBF2432B50E936000AC5FF /* AR_Placement_Indicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2422B50E936000AC5FF /* AR_Placement_Indicator.png */; };
 		3EDBF2452B50E942000AC5FF /* Surface_DIFFUSE.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2442B50E942000AC5FF /* Surface_DIFFUSE.png */; };
@@ -111,6 +113,8 @@
 		3EB016F42B627EB4002000F7 /* robotHead.reality */ = {isa = PBXFileReference; lastKnownFileType = file; path = robotHead.reality; sourceTree = "<group>"; };
 		3EB016F72B62889C002000F7 /* BlendShapeRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendShapeRobot.swift; sourceTree = "<group>"; };
 		3EB016F92B678A4F002000F7 /* LightEstimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightEstimate.swift; sourceTree = "<group>"; };
+		3EB016FB2B68A1E1002000F7 /* EnvironmentTexturing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentTexturing.swift; sourceTree = "<group>"; };
+		3EB016FD2B68DBC6002000F7 /* ManualEnvirmentTexturing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualEnvirmentTexturing.swift; sourceTree = "<group>"; };
 		3EDBF2402B50E92C000AC5FF /* Box_Texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Box_Texture.jpg; sourceTree = "<group>"; };
 		3EDBF2422B50E936000AC5FF /* AR_Placement_Indicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AR_Placement_Indicator.png; sourceTree = "<group>"; };
 		3EDBF2442B50E942000AC5FF /* Surface_DIFFUSE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Surface_DIFFUSE.png; sourceTree = "<group>"; };
@@ -258,6 +262,8 @@
 				3EB016F32B627EB3002000F7 /* RobotHead.swift */,
 				3EB016F72B62889C002000F7 /* BlendShapeRobot.swift */,
 				3EB016F92B678A4F002000F7 /* LightEstimate.swift */,
+				3EB016FB2B68A1E1002000F7 /* EnvironmentTexturing.swift */,
+				3EB016FD2B68DBC6002000F7 /* ManualEnvirmentTexturing.swift */,
 			);
 			path = FunctionalTechnology;
 			sourceTree = "<group>";
@@ -407,7 +413,9 @@
 				3EB016F02B625DF2002000F7 /* BlendShapeView.swift in Sources */,
 				3E2AB0C22B4D6E1800B7E741 /* RayCheckingAndGestureView.swift in Sources */,
 				3EDBF24E2B594300000AC5FF /* ImageChecking.swift in Sources */,
+				3EB016FE2B68DBC6002000F7 /* ManualEnvirmentTexturing.swift in Sources */,
 				3E88882B2B5E82BE00127C96 /* ObjectChceking.swift in Sources */,
+				3EB016FC2B68A1E1002000F7 /* EnvironmentTexturing.swift in Sources */,
 				3E2AB0C42B4D6E1800B7E741 /* SpotLight.swift in Sources */,
 				3EB016FA2B678A4F002000F7 /* LightEstimate.swift in Sources */,
 				3EB016E82B610647002000F7 /* FaceChecking.swift in Sources */,
