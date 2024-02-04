@@ -20,7 +20,9 @@ struct FunctionalTechnology: View {
         listModel(title: "BlendShape", view: BlendShapeView()),
         listModel(title: "光照估计", view: LightEstimate()),
         listModel(title: "环境探头", view: EnvironmentTexturing()),
-        listModel(title: "手动环境探头", view: ManualEnvirmentTexturing())
+        listModel(title: "手动环境探头", view: ManualEnvirmentTexturing()),
+        listModel(title: "人体骨架2D检测", view: BodyTrackingView()),
+        listModel(title: "人体骨架3D检测", view: BodyTracking3DView())
         
         
     ]
