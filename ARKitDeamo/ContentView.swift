@@ -22,13 +22,13 @@ struct ContentView: View {
                 .environmentObject(tabbar)
                 .tabItem {
                     Image(systemName: "rectangle.on.rectangle")
-                    Text("提高篇")
+                    Text("技术篇")
                 }.tag(1)
             BaseChapterView()
                 .environmentObject(tabbar)
                 .tabItem {
                     Image(systemName: "smiley")
-                    Text("实战篇")
+                    Text("提高篇")
                 }.tag(2)
         }
         

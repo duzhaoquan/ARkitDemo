@@ -22,7 +22,11 @@ struct FunctionalTechnology: View {
         listModel(title: "环境探头", view: EnvironmentTexturing()),
         listModel(title: "手动环境探头", view: ManualEnvirmentTexturing()),
         listModel(title: "人体骨架2D检测", view: BodyTrackingView()),
-        listModel(title: "人体骨架3D检测", view: BodyTracking3DView())
+        listModel(title: "人体骨架3D检测", view: BodyTracking3DView()),
+        listModel(title: "人形遮挡", view: HumanOcclusionView()),
+        listModel(title: "人形获取", view: HumanExtraction()),
+        
+        
         
         
     ]
