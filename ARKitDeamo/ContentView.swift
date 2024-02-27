@@ -24,7 +24,7 @@ struct ContentView: View {
                     Image(systemName: "rectangle.on.rectangle")
                     Text("技术篇")
                 }.tag(1)
-            BaseChapterView()
+            AdvancedChapterView()
                 .environmentObject(tabbar)
                 .tabItem {
                     Image(systemName: "smiley")

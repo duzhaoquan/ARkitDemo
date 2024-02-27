@@ -52,6 +52,10 @@
 		3EC4E9772B6FAB680032889F /* fender_stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3EC4E9762B6FAB680032889F /* fender_stratocaster.usdz */; };
 		3EC4E9792B6FABEF0032889F /* HumanOcclusion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC4E9782B6FABEE0032889F /* HumanOcclusion.swift */; };
 		3EC4E97B2B6FB4DE0032889F /* HumanExtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC4E97A2B6FB4DE0032889F /* HumanExtraction.swift */; };
+		3ED5B3C52B84C01B002A4F11 /* AdvancedChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5B3C42B84C01B002A4F11 /* AdvancedChapterView.swift */; };
+		3ED5B3C72B84D1A9002A4F11 /* ARWorldMapSaveAndLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5B3C62B84D1A9002A4F11 /* ARWorldMapSaveAndLoad.swift */; };
+		3ED5B3C92B876780002A4F11 /* ARWorldMapShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5B3C82B876780002A4F11 /* ARWorldMapShare.swift */; };
+		3ED5B3CB2B8773C5002A4F11 /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5B3CA2B8773C5002A4F11 /* MultipeerSession.swift */; };
 		3EDBF2412B50E92C000AC5FF /* Box_Texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2402B50E92C000AC5FF /* Box_Texture.jpg */; };
 		3EDBF2432B50E936000AC5FF /* AR_Placement_Indicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2422B50E936000AC5FF /* AR_Placement_Indicator.png */; };
 		3EDBF2452B50E942000AC5FF /* Surface_DIFFUSE.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2442B50E942000AC5FF /* Surface_DIFFUSE.png */; };
@@ -127,6 +131,11 @@
 		3EC4E9762B6FAB680032889F /* fender_stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fender_stratocaster.usdz; sourceTree = "<group>"; };
 		3EC4E9782B6FABEE0032889F /* HumanOcclusion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanOcclusion.swift; sourceTree = "<group>"; };
 		3EC4E97A2B6FB4DE0032889F /* HumanExtraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanExtraction.swift; sourceTree = "<group>"; };
+		3ED5B3C42B84C01B002A4F11 /* AdvancedChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedChapterView.swift; sourceTree = "<group>"; };
+		3ED5B3C62B84D1A9002A4F11 /* ARWorldMapSaveAndLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARWorldMapSaveAndLoad.swift; sourceTree = "<group>"; };
+		3ED5B3C82B876780002A4F11 /* ARWorldMapShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARWorldMapShare.swift; sourceTree = "<group>"; };
+		3ED5B3CA2B8773C5002A4F11 /* MultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerSession.swift; sourceTree = "<group>"; };
+		3ED5B3CC2B888396002A4F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3EDBF2402B50E92C000AC5FF /* Box_Texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Box_Texture.jpg; sourceTree = "<group>"; };
 		3EDBF2422B50E936000AC5FF /* AR_Placement_Indicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AR_Placement_Indicator.png; sourceTree = "<group>"; };
 		3EDBF2442B50E942000AC5FF /* Surface_DIFFUSE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Surface_DIFFUSE.png; sourceTree = "<group>"; };
@@ -184,9 +193,11 @@
 		3E2AB07E2B4D6C6300B7E741 /* ARKitDeamo */ = {
 			isa = PBXGroup;
 			children = (
+				3ED5B3CC2B888396002A4F11 /* Info.plist */,
 				3EB016ED2B612A3A002000F7 /* FaceMask.rcproject */,
-				3EDBF24A2B58F8A2000AC5FF /* FunctionalTechnology */,
 				3E2AB0A92B4D6DAA00B7E741 /* BaseChapter */,
+				3EDBF24A2B58F8A2000AC5FF /* FunctionalTechnology */,
+				3ED5B3C32B84BFD8002A4F11 /* AdvancedChapter */,
 				3E2AB07F2B4D6C6300B7E741 /* ARKitDeamoApp.swift */,
 				3E2AB0812B4D6C6300B7E741 /* ContentView.swift */,
 				3E2AB0832B4D6C6600B7E741 /* Assets.xcassets */,
@@ -241,6 +252,17 @@
 				3EDBF2462B50EA56000AC5FF /* BaseChapterView.swift */,
 			);
 			path = BaseChapter;
+			sourceTree = "<group>";
+		};
+		3ED5B3C32B84BFD8002A4F11 /* AdvancedChapter */ = {
+			isa = PBXGroup;
+			children = (
+				3ED5B3C42B84C01B002A4F11 /* AdvancedChapterView.swift */,
+				3ED5B3C62B84D1A9002A4F11 /* ARWorldMapSaveAndLoad.swift */,
+				3ED5B3C82B876780002A4F11 /* ARWorldMapShare.swift */,
+				3ED5B3CA2B8773C5002A4F11 /* MultipeerSession.swift */,
+			);
+			path = AdvancedChapter;
 			sourceTree = "<group>";
 		};
 		3EDBF23F2B50E916000AC5FF /* image */ = {
@@ -440,6 +462,7 @@
 				3EB016FA2B678A4F002000F7 /* LightEstimate.swift in Sources */,
 				3EB016E82B610647002000F7 /* FaceChecking.swift in Sources */,
 				3EDBF24C2B58F965000AC5FF /* FunctionalTechnology.swift in Sources */,
+				3ED5B3CB2B8773C5002A4F11 /* MultipeerSession.swift in Sources */,
 				3E2AB0822B4D6C6300B7E741 /* ContentView.swift in Sources */,
 				3E2AB0802B4D6C6300B7E741 /* ARKitDeamoApp.swift in Sources */,
 				3E2AB0BF2B4D6E1800B7E741 /* PointLight.swift in Sources */,
@@ -450,13 +473,16 @@
 				3E2AB0C12B4D6E1800B7E741 /* ARGescherView.swift in Sources */,
 				3E2AB0BC2B4D6E1800B7E741 /* AnchorGeometryView.swift in Sources */,
 				3EC4E9712B6BB1DD0032889F /* BodyTracking3DView.swift in Sources */,
+				3ED5B3C92B876780002A4F11 /* ARWorldMapShare.swift in Sources */,
 				3EB016EE2B612A3A002000F7 /* FaceMask.rcproject in Sources */,
 				3E9ADBB72B5F94F600D2AECD /* ObjectScanning.swift in Sources */,
 				3E2AB0B82B4D6E1800B7E741 /* RealityKitEventView.swift in Sources */,
 				3EC4E9792B6FABEF0032889F /* HumanOcclusion.swift in Sources */,
 				3EC4E97B2B6FB4DE0032889F /* HumanExtraction.swift in Sources */,
 				3E2AB0C52B4D6E1800B7E741 /* GestureControlView.swift in Sources */,
+				3ED5B3C52B84C01B002A4F11 /* AdvancedChapterView.swift in Sources */,
 				3E2AB0BA2B4D6E1800B7E741 /* BoneAnimationView.swift in Sources */,
+				3ED5B3C72B84D1A9002A4F11 /* ARWorldMapSaveAndLoad.swift in Sources */,
 				3E2AB0C02B4D6E1800B7E741 /* ShapShoptView.swift in Sources */,
 				3EC4E96F2B6B43FD0032889F /* BodyTrackingView.swift in Sources */,
 				3E2AB0B92B4D6E1800B7E741 /* CheckingsPlaneShowView.swift in Sources */,
@@ -629,7 +655,9 @@
 				DEVELOPMENT_TEAM = 6245M2ZZ7W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ARKitDeamo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "使用摄像头捕捉画面";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "传输AR环境";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "保存照片到相册";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -661,7 +689,9 @@
 				DEVELOPMENT_TEAM = 6245M2ZZ7W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ARKitDeamo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "使用摄像头捕捉画面";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "传输AR环境";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "保存照片到相册";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

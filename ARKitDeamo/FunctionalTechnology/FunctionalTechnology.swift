@@ -42,7 +42,7 @@ struct FunctionalTechnology: View {
                     Text(model.title)
                 }
             }
-            .navigationTitle("提高篇")
+            .navigationTitle("功能篇")
             .navigationBarTitleDisplayMode(.inline)
         }
     }
