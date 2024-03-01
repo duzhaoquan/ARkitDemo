@@ -6,6 +6,10 @@
 	<array>
 		<string>_ar-sharing._tcp</string>
 		<string>_ar-sharing._udp</string>
+		<string>_sync-session._tcp</string>
+		<string>_cooper-session._tcp</string>
+		<string>_cooper-session._udp</string>
+		<string>_sync-session._udp</string>
 	</array>
 </dict>
 </plist>

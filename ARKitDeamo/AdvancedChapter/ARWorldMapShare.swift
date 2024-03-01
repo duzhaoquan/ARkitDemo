@@ -16,6 +16,13 @@ struct ARWorldMapShare: View {
     
     var body: some View {
         ARWorldMapShareContainer(viewModel: viewModel)
+            .onDisappear(perform: {
+                viewModel.arView?.session.pause()
+                viewModel.arView = nil
+                viewModel.multipeerSession?.endConnect()
+                viewModel.multipeerSession = nil
+                print("ARWorldMapShare onDisappear")
+            })
             .overlay(
                 VStack{
                     Spacer()
@@ -54,7 +61,7 @@ struct ARWorldMapShare: View {
         
         func createPlane()  {
             if multipeerSession == nil {
-                multipeerSession = MultipeerSession(receivedDataHandler: reciveData(_:from:), peerJoinedHandler: peerJoined(_:), peerLeftHandler: peerLeft(_:), peerDiscoveredHandler: peerDiscovery(_:))
+                multipeerSession = MultipeerSession(serviceType: "ar-sharing", receivedDataHandler: reciveData(_:from:), peerJoinedHandler: peerJoined(_:), peerLeftHandler: peerLeft(_:), peerDiscoveredHandler: peerDiscovery(_:))
             }
             guard let arView = arView else {
                 return
@@ -144,10 +151,13 @@ struct ARWorldMapShare: View {
             self.arView?.addGestureRecognizer(tap)
         }
         @objc func handleTap(sender: UITapGestureRecognizer){
+            guard let raycastResult = raycastResult else {
+                return
+            }
             sender.isEnabled = false
             sender.removeTarget(nil, action: nil)
             isPlaced = true
-            let anchor = ARAnchor(name: robotAnchorName, transform: raycastResult?.worldTransform ?? simd_float4x4())
+            let anchor = ARAnchor(name: robotAnchorName, transform: raycastResult.worldTransform )
             self.arView?.session.add(anchor: anchor)
             
             robotAnchor = AnchorEntity(anchor: anchor)

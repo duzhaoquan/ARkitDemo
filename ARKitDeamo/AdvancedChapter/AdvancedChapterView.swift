@@ -13,8 +13,8 @@ struct AdvancedChapterView: View {
         
         listModel(title: "保存与加载ARWorldMap", view: ARWorldMapSaveAndLoad()),
         listModel(title: "共享ARWorldMap", view: ARWorldMapShare()),
-        listModel(title: "人形遮挡", view: HumanOcclusionView()),
-        listModel(title: "人形获取", view: HumanExtraction()),
+        listModel(title: "协作Session", view: CooperationSession()),
+        listModel(title: "同步Session", view: SyncARSession()),
     ]
     var body: some View {
         

@@ -145,10 +145,13 @@ struct ARWorldMapSaveAndLoad: View {
             self.arView?.addGestureRecognizer(tap)
         }
         @objc func handleTap(sender: UITapGestureRecognizer){
+            guard let raycastResult = raycastResult else {
+                return
+            }
             sender.isEnabled = false
             sender.removeTarget(nil, action: nil)
             isPlaced = true
-            let anchor = ARAnchor(name: robotAnchorName, transform: raycastResult?.worldTransform ?? simd_float4x4())
+            let anchor = ARAnchor(name: robotAnchorName, transform: raycastResult.worldTransform)
             self.arView?.session.add(anchor: anchor)
             
             robotAnchor = AnchorEntity(anchor: anchor)

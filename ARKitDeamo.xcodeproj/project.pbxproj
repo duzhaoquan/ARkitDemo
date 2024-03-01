@@ -34,6 +34,7 @@
 		3E6F02A92B5A4F7A007BEF1B /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3E6F02A52B5A4F7A007BEF1B /* toy_biplane.usdz */; };
 		3E8888292B5E6ED000127C96 /* jinhua.arobject in Resources */ = {isa = PBXBuildFile; fileRef = 3E8888282B5E6ED000127C96 /* jinhua.arobject */; };
 		3E88882B2B5E82BE00127C96 /* ObjectChceking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E88882A2B5E82BE00127C96 /* ObjectChceking.swift */; };
+		3E8C38F72B8F0B20006D76E7 /* SyncARSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C38F62B8F0B20006D76E7 /* SyncARSession.swift */; };
 		3E9ADBB72B5F94F600D2AECD /* ObjectScanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9ADBB62B5F94F600D2AECD /* ObjectScanning.swift */; };
 		3EB016E82B610647002000F7 /* FaceChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB016E72B610647002000F7 /* FaceChecking.swift */; };
 		3EB016EC2B61254E002000F7 /* face.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB016EB2B61254E002000F7 /* face.scnassets */; };
@@ -56,6 +57,7 @@
 		3ED5B3C72B84D1A9002A4F11 /* ARWorldMapSaveAndLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5B3C62B84D1A9002A4F11 /* ARWorldMapSaveAndLoad.swift */; };
 		3ED5B3C92B876780002A4F11 /* ARWorldMapShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5B3C82B876780002A4F11 /* ARWorldMapShare.swift */; };
 		3ED5B3CB2B8773C5002A4F11 /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5B3CA2B8773C5002A4F11 /* MultipeerSession.swift */; };
+		3ED5B3CE2B8DFEC1002A4F11 /* CooperationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED5B3CD2B8DFEC1002A4F11 /* CooperationSession.swift */; };
 		3EDBF2412B50E92C000AC5FF /* Box_Texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2402B50E92C000AC5FF /* Box_Texture.jpg */; };
 		3EDBF2432B50E936000AC5FF /* AR_Placement_Indicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2422B50E936000AC5FF /* AR_Placement_Indicator.png */; };
 		3EDBF2452B50E942000AC5FF /* Surface_DIFFUSE.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2442B50E942000AC5FF /* Surface_DIFFUSE.png */; };
@@ -113,6 +115,7 @@
 		3E6F02A52B5A4F7A007BEF1B /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
 		3E8888282B5E6ED000127C96 /* jinhua.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = jinhua.arobject; sourceTree = "<group>"; };
 		3E88882A2B5E82BE00127C96 /* ObjectChceking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectChceking.swift; sourceTree = "<group>"; };
+		3E8C38F62B8F0B20006D76E7 /* SyncARSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncARSession.swift; sourceTree = "<group>"; };
 		3E9ADBB62B5F94F600D2AECD /* ObjectScanning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectScanning.swift; sourceTree = "<group>"; };
 		3EB016E72B610647002000F7 /* FaceChecking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceChecking.swift; sourceTree = "<group>"; };
 		3EB016EB2B61254E002000F7 /* face.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = face.scnassets; sourceTree = "<group>"; };
@@ -136,6 +139,7 @@
 		3ED5B3C82B876780002A4F11 /* ARWorldMapShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARWorldMapShare.swift; sourceTree = "<group>"; };
 		3ED5B3CA2B8773C5002A4F11 /* MultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerSession.swift; sourceTree = "<group>"; };
 		3ED5B3CC2B888396002A4F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3ED5B3CD2B8DFEC1002A4F11 /* CooperationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CooperationSession.swift; sourceTree = "<group>"; };
 		3EDBF2402B50E92C000AC5FF /* Box_Texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Box_Texture.jpg; sourceTree = "<group>"; };
 		3EDBF2422B50E936000AC5FF /* AR_Placement_Indicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AR_Placement_Indicator.png; sourceTree = "<group>"; };
 		3EDBF2442B50E942000AC5FF /* Surface_DIFFUSE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Surface_DIFFUSE.png; sourceTree = "<group>"; };
@@ -261,6 +265,8 @@
 				3ED5B3C62B84D1A9002A4F11 /* ARWorldMapSaveAndLoad.swift */,
 				3ED5B3C82B876780002A4F11 /* ARWorldMapShare.swift */,
 				3ED5B3CA2B8773C5002A4F11 /* MultipeerSession.swift */,
+				3ED5B3CD2B8DFEC1002A4F11 /* CooperationSession.swift */,
+				3E8C38F62B8F0B20006D76E7 /* SyncARSession.swift */,
 			);
 			path = AdvancedChapter;
 			sourceTree = "<group>";
@@ -480,10 +486,12 @@
 				3EC4E9792B6FABEF0032889F /* HumanOcclusion.swift in Sources */,
 				3EC4E97B2B6FB4DE0032889F /* HumanExtraction.swift in Sources */,
 				3E2AB0C52B4D6E1800B7E741 /* GestureControlView.swift in Sources */,
+				3ED5B3CE2B8DFEC1002A4F11 /* CooperationSession.swift in Sources */,
 				3ED5B3C52B84C01B002A4F11 /* AdvancedChapterView.swift in Sources */,
 				3E2AB0BA2B4D6E1800B7E741 /* BoneAnimationView.swift in Sources */,
 				3ED5B3C72B84D1A9002A4F11 /* ARWorldMapSaveAndLoad.swift in Sources */,
 				3E2AB0C02B4D6E1800B7E741 /* ShapShoptView.swift in Sources */,
+				3E8C38F72B8F0B20006D76E7 /* SyncARSession.swift in Sources */,
 				3EC4E96F2B6B43FD0032889F /* BodyTrackingView.swift in Sources */,
 				3E2AB0B92B4D6E1800B7E741 /* CheckingsPlaneShowView.swift in Sources */,
 				3E2AB0C32B4D6E1800B7E741 /* DirectionalLight.swift in Sources */,

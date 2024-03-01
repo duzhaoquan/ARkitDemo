@@ -7,13 +7,14 @@
 
 import Foundation
 import MultipeerConnectivity
+import RealityKit
 
 
 class MultipeerSession: NSObject {
     
-    static let serviceType = "ar-sharing"
+    var serviceType = "ar-sharing"
     
-    private let myPeerID = MCPeerID(displayName: UIDevice.current.name)
+    private let myPeerID = MCPeerID(displayName: UUID().uuidString)
     
     private var session: MCSession!
     private var serviceBrowser: MCNearbyServiceBrowser!
@@ -25,7 +26,19 @@ class MultipeerSession: NSObject {
     private let peerLeftHandler: (MCPeerID) -> Void
     private let peerDiscoveredHandler: (MCPeerID) -> Bool
     
-    init(receivedDataHandler: @escaping (Data, MCPeerID) -> Void, 
+//    private var syncServiceRK: MultipeerConnectivityService?
+//    public var syncService: MultipeerConnectivityService? {
+//      if syncServiceRK == nil {
+//        syncServiceRK = try? MultipeerConnectivityService(session: session)
+//      }
+//      return syncServiceRK
+//    }
+    
+    lazy var syncService: MultipeerConnectivityService? = {
+        try? MultipeerConnectivityService(session: session)
+    }()
+    
+    init(serviceType: String, receivedDataHandler: @escaping (Data, MCPeerID) -> Void,
          peerJoinedHandler: @escaping (MCPeerID) -> Void,
          peerLeftHandler: @escaping (MCPeerID) -> Void,
          peerDiscoveredHandler: @escaping (MCPeerID) -> Bool) {
@@ -33,18 +46,19 @@ class MultipeerSession: NSObject {
         self.peerJoinedHandler = peerJoinedHandler
         self.peerLeftHandler = peerLeftHandler
         self.peerDiscoveredHandler = peerDiscoveredHandler
-        
+            
+        self.serviceType = serviceType
         super.init()
-        
+             
         session = MCSession(peer: myPeerID, securityIdentity: nil, encryptionPreference: .required)
         session.delegate = self
         
-        serviceBrowser = MCNearbyServiceBrowser(peer: myPeerID, serviceType: MultipeerSession.serviceType)
+        serviceBrowser = MCNearbyServiceBrowser(peer: myPeerID, serviceType: serviceType)
         serviceBrowser.delegate = self
         //搜索可用的服务
         serviceBrowser.startBrowsingForPeers()
         
-        serviceAdvertiser = MCNearbyServiceAdvertiser(peer: myPeerID, discoveryInfo: nil, serviceType: MultipeerSession.serviceType)
+        serviceAdvertiser = MCNearbyServiceAdvertiser(peer: myPeerID, discoveryInfo: nil, serviceType: serviceType)
         serviceAdvertiser.delegate = self
         //广播自己
         serviceAdvertiser.startAdvertisingPeer()
@@ -52,6 +66,15 @@ class MultipeerSession: NSObject {
         
         
         
+    }
+    deinit {
+        print("MultipeerSession deinit")
+    }
+    
+    func endConnect(){
+        session.disconnect()
+        serviceBrowser.stopBrowsingForPeers()
+        serviceAdvertiser.stopAdvertisingPeer()
     }
     
     func sendToAllPeers(_ data: Data,reliably: Bool) {
@@ -81,6 +104,7 @@ extension MultipeerSession: MCSessionDelegate {
         } else if state == .notConnected {
             print("断开链接peerID：\(peerID)")
             peerLeftHandler(peerID)
+            
         }
     }
     
