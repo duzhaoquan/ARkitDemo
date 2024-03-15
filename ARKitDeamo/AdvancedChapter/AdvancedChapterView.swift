@@ -15,6 +15,8 @@ struct AdvancedChapterView: View {
         listModel(title: "共享ARWorldMap", view: ARWorldMapShare()),
         listModel(title: "协作Session", view: CooperationSession()),
         listModel(title: "同步Session", view: SyncARSession()),
+        listModel(title: "物理模拟", view: PhysicsBodyView()),
+        listModel(title: "物理模拟2", view: PhysicsMotionView()),
     ]
     var body: some View {
         
