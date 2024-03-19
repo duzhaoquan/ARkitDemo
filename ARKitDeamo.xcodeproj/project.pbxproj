@@ -38,6 +38,7 @@
 		3E6F02A92B5A4F7A007BEF1B /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3E6F02A52B5A4F7A007BEF1B /* toy_biplane.usdz */; };
 		3E8888292B5E6ED000127C96 /* jinhua.arobject in Resources */ = {isa = PBXBuildFile; fileRef = 3E8888282B5E6ED000127C96 /* jinhua.arobject */; };
 		3E88882B2B5E82BE00127C96 /* ObjectChceking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E88882A2B5E82BE00127C96 /* ObjectChceking.swift */; };
+		3E88CE5A2BA81824009B98D0 /* TriggerVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E88CE592BA81824009B98D0 /* TriggerVolumeView.swift */; };
 		3E8C38F72B8F0B20006D76E7 /* SyncARSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C38F62B8F0B20006D76E7 /* SyncARSession.swift */; };
 		3E9ADBB72B5F94F600D2AECD /* ObjectScanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9ADBB62B5F94F600D2AECD /* ObjectScanning.swift */; };
 		3EB016E82B610647002000F7 /* FaceChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB016E72B610647002000F7 /* FaceChecking.swift */; };
@@ -123,6 +124,7 @@
 		3E6F02A52B5A4F7A007BEF1B /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
 		3E8888282B5E6ED000127C96 /* jinhua.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = jinhua.arobject; sourceTree = "<group>"; };
 		3E88882A2B5E82BE00127C96 /* ObjectChceking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectChceking.swift; sourceTree = "<group>"; };
+		3E88CE592BA81824009B98D0 /* TriggerVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerVolumeView.swift; sourceTree = "<group>"; };
 		3E8C38F62B8F0B20006D76E7 /* SyncARSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncARSession.swift; sourceTree = "<group>"; };
 		3E9ADBB62B5F94F600D2AECD /* ObjectScanning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectScanning.swift; sourceTree = "<group>"; };
 		3EB016E72B610647002000F7 /* FaceChecking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceChecking.swift; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 				3E4CBC182BA317DE00489A19 /* PhysicsMotionView.swift */,
 				3E4CBC162BA2F86C00489A19 /* Ball.rcproject */,
 				3E4CBC142BA2F5C900489A19 /* GameController.swift */,
+				3E88CE592BA81824009B98D0 /* TriggerVolumeView.swift */,
 			);
 			path = AdvancedChapter;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				3ED5B3CB2B8773C5002A4F11 /* MultipeerSession.swift in Sources */,
 				3E2AB0822B4D6C6300B7E741 /* ContentView.swift in Sources */,
 				3E2AB0802B4D6C6300B7E741 /* ARKitDeamoApp.swift in Sources */,
+				3E88CE5A2BA81824009B98D0 /* TriggerVolumeView.swift in Sources */,
 				3E2AB0BF2B4D6E1800B7E741 /* PointLight.swift in Sources */,
 				3E2AB0BE2B4D6E1800B7E741 /* AsyncLoadView.swift in Sources */,
 				3EDBF2472B50EA56000AC5FF /* BaseChapterView.swift in Sources */,

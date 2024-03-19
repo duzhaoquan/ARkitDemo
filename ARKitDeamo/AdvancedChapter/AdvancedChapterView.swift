@@ -17,6 +17,8 @@ struct AdvancedChapterView: View {
         listModel(title: "同步Session", view: SyncARSession()),
         listModel(title: "物理模拟", view: PhysicsBodyView()),
         listModel(title: "物理模拟2", view: PhysicsMotionView()),
+        listModel(title: "触发器与触发域", view: TriggerVolumeView()),
+        
     ]
     var body: some View {
         
