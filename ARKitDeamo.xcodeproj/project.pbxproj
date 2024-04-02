@@ -28,10 +28,12 @@
 		3E2AB0C32B4D6E1800B7E741 /* DirectionalLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0B52B4D6E1800B7E741 /* DirectionalLight.swift */; };
 		3E2AB0C42B4D6E1800B7E741 /* SpotLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0B62B4D6E1800B7E741 /* SpotLight.swift */; };
 		3E2AB0C52B4D6E1800B7E741 /* GestureControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0B72B4D6E1800B7E741 /* GestureControlView.swift */; };
+		3E3422982BB2C43D003A8233 /* Video3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3422972BB2C43D003A8233 /* Video3DView.swift */; };
 		3E4CBC132BA2CBC000489A19 /* PhysicsBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4CBC122BA2CBC000489A19 /* PhysicsBodyView.swift */; };
 		3E4CBC152BA2F5C900489A19 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4CBC142BA2F5C900489A19 /* GameController.swift */; };
 		3E4CBC172BA2F86C00489A19 /* Ball.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 3E4CBC162BA2F86C00489A19 /* Ball.rcproject */; };
 		3E4CBC192BA317DE00489A19 /* PhysicsMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4CBC182BA317DE00489A19 /* PhysicsMotionView.swift */; };
+		3E627EE72BB17AC50008D7B4 /* VideoPlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E627EE62BB17AC50008D7B4 /* VideoPlayController.swift */; };
 		3E6F02A62B5A4F7A007BEF1B /* toy_robot_vintage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3E6F02A22B5A4F78007BEF1B /* toy_robot_vintage.usdz */; };
 		3E6F02A72B5A4F7A007BEF1B /* tv_retro.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3E6F02A32B5A4F79007BEF1B /* tv_retro.usdz */; };
 		3E6F02A82B5A4F7A007BEF1B /* objBook.arobject in Resources */ = {isa = PBXBuildFile; fileRef = 3E6F02A42B5A4F7A007BEF1B /* objBook.arobject */; };
@@ -39,6 +41,7 @@
 		3E8888292B5E6ED000127C96 /* jinhua.arobject in Resources */ = {isa = PBXBuildFile; fileRef = 3E8888282B5E6ED000127C96 /* jinhua.arobject */; };
 		3E88882B2B5E82BE00127C96 /* ObjectChceking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E88882A2B5E82BE00127C96 /* ObjectChceking.swift */; };
 		3E88CE5A2BA81824009B98D0 /* TriggerVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E88CE592BA81824009B98D0 /* TriggerVolumeView.swift */; };
+		3E88CE5C2BABE7E9009B98D0 /* Text3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E88CE5B2BABE7E9009B98D0 /* Text3DView.swift */; };
 		3E8C38F72B8F0B20006D76E7 /* SyncARSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C38F62B8F0B20006D76E7 /* SyncARSession.swift */; };
 		3E9ADBB72B5F94F600D2AECD /* ObjectScanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9ADBB62B5F94F600D2AECD /* ObjectScanning.swift */; };
 		3EB016E82B610647002000F7 /* FaceChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB016E72B610647002000F7 /* FaceChecking.swift */; };
@@ -70,6 +73,10 @@
 		3EDBF2492B57F23A000AC5FF /* toy_drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 3EDBF2482B57F23A000AC5FF /* toy_drummer.usdz */; };
 		3EDBF24C2B58F965000AC5FF /* FunctionalTechnology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDBF24B2B58F965000AC5FF /* FunctionalTechnology.swift */; };
 		3EDBF24E2B594300000AC5FF /* ImageChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDBF24D2B594300000AC5FF /* ImageChecking.swift */; };
+		3EE7C8042BAD5DF700134B48 /* Audio3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE7C8032BAD5DF700134B48 /* Audio3DView.swift */; };
+		3EE7C8082BAD6B9200134B48 /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3EE7C8052BAD6B9100134B48 /* video2.mp4 */; };
+		3EE7C8092BAD6B9200134B48 /* fox.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3EE7C8062BAD6B9200134B48 /* fox.mp3 */; };
+		3EE7C80A2BAD6B9200134B48 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3EE7C8072BAD6B9200134B48 /* video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,10 +121,12 @@
 		3E2AB0B52B4D6E1800B7E741 /* DirectionalLight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionalLight.swift; sourceTree = "<group>"; };
 		3E2AB0B62B4D6E1800B7E741 /* SpotLight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotLight.swift; sourceTree = "<group>"; };
 		3E2AB0B72B4D6E1800B7E741 /* GestureControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureControlView.swift; sourceTree = "<group>"; };
+		3E3422972BB2C43D003A8233 /* Video3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video3DView.swift; sourceTree = "<group>"; };
 		3E4CBC122BA2CBC000489A19 /* PhysicsBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsBodyView.swift; sourceTree = "<group>"; };
 		3E4CBC142BA2F5C900489A19 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		3E4CBC162BA2F86C00489A19 /* Ball.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Ball.rcproject; sourceTree = "<group>"; };
 		3E4CBC182BA317DE00489A19 /* PhysicsMotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsMotionView.swift; sourceTree = "<group>"; };
+		3E627EE62BB17AC50008D7B4 /* VideoPlayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayController.swift; sourceTree = "<group>"; };
 		3E6F02A22B5A4F78007BEF1B /* toy_robot_vintage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_robot_vintage.usdz; sourceTree = "<group>"; };
 		3E6F02A32B5A4F79007BEF1B /* tv_retro.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tv_retro.usdz; sourceTree = "<group>"; };
 		3E6F02A42B5A4F7A007BEF1B /* objBook.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = objBook.arobject; sourceTree = "<group>"; };
@@ -125,6 +134,7 @@
 		3E8888282B5E6ED000127C96 /* jinhua.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = jinhua.arobject; sourceTree = "<group>"; };
 		3E88882A2B5E82BE00127C96 /* ObjectChceking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectChceking.swift; sourceTree = "<group>"; };
 		3E88CE592BA81824009B98D0 /* TriggerVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggerVolumeView.swift; sourceTree = "<group>"; };
+		3E88CE5B2BABE7E9009B98D0 /* Text3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text3DView.swift; sourceTree = "<group>"; };
 		3E8C38F62B8F0B20006D76E7 /* SyncARSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncARSession.swift; sourceTree = "<group>"; };
 		3E9ADBB62B5F94F600D2AECD /* ObjectScanning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectScanning.swift; sourceTree = "<group>"; };
 		3EB016E72B610647002000F7 /* FaceChecking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceChecking.swift; sourceTree = "<group>"; };
@@ -157,6 +167,10 @@
 		3EDBF2482B57F23A000AC5FF /* toy_drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer.usdz; sourceTree = "<group>"; };
 		3EDBF24B2B58F965000AC5FF /* FunctionalTechnology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalTechnology.swift; sourceTree = "<group>"; };
 		3EDBF24D2B594300000AC5FF /* ImageChecking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageChecking.swift; sourceTree = "<group>"; };
+		3EE7C8032BAD5DF700134B48 /* Audio3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio3DView.swift; sourceTree = "<group>"; };
+		3EE7C8052BAD6B9100134B48 /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
+		3EE7C8062BAD6B9200134B48 /* fox.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fox.mp3; sourceTree = "<group>"; };
+		3EE7C8072BAD6B9200134B48 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +225,7 @@
 				3EB016ED2B612A3A002000F7 /* FaceMask.rcproject */,
 				3E2AB0A92B4D6DAA00B7E741 /* BaseChapter */,
 				3EDBF24A2B58F8A2000AC5FF /* FunctionalTechnology */,
+				3EE7C8062BAD6B9200134B48 /* fox.mp3 */,
 				3ED5B3C32B84BFD8002A4F11 /* AdvancedChapter */,
 				3E2AB07F2B4D6C6300B7E741 /* ARKitDeamoApp.swift */,
 				3E2AB0812B4D6C6300B7E741 /* ContentView.swift */,
@@ -282,6 +297,12 @@
 				3E4CBC162BA2F86C00489A19 /* Ball.rcproject */,
 				3E4CBC142BA2F5C900489A19 /* GameController.swift */,
 				3E88CE592BA81824009B98D0 /* TriggerVolumeView.swift */,
+				3EE7C8072BAD6B9200134B48 /* video.mp4 */,
+				3EE7C8052BAD6B9100134B48 /* video2.mp4 */,
+				3E88CE5B2BABE7E9009B98D0 /* Text3DView.swift */,
+				3EE7C8032BAD5DF700134B48 /* Audio3DView.swift */,
+				3E627EE62BB17AC50008D7B4 /* VideoPlayController.swift */,
+				3E3422972BB2C43D003A8233 /* Video3DView.swift */,
 			);
 			path = AdvancedChapter;
 			sourceTree = "<group>";
@@ -433,11 +454,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EE7C8082BAD6B9200134B48 /* video2.mp4 in Resources */,
 				3EDBF2452B50E942000AC5FF /* Surface_DIFFUSE.png in Resources */,
 				3EC4E9732B6C930C0032889F /* robot.usdz in Resources */,
 				3EDBF2432B50E936000AC5FF /* AR_Placement_Indicator.png in Resources */,
 				3E6F02A82B5A4F7A007BEF1B /* objBook.arobject in Resources */,
 				3EB016EC2B61254E002000F7 /* face.scnassets in Resources */,
+				3EE7C8092BAD6B9200134B48 /* fox.mp3 in Resources */,
 				3EB016F22B6261E8002000F7 /* BlendShapeFace.scn in Resources */,
 				3E2AB0872B4D6C6600B7E741 /* Preview Assets.xcassets in Resources */,
 				3EDBF2412B50E92C000AC5FF /* Box_Texture.jpg in Resources */,
@@ -447,6 +470,7 @@
 				3E6F02A72B5A4F7A007BEF1B /* tv_retro.usdz in Resources */,
 				3E8888292B5E6ED000127C96 /* jinhua.arobject in Resources */,
 				3E6F02A62B5A4F7A007BEF1B /* toy_robot_vintage.usdz in Resources */,
+				3EE7C80A2BAD6B9200134B48 /* video.mp4 in Resources */,
 				3EC4E9772B6FAB680032889F /* fender_stratocaster.usdz in Resources */,
 				3EB016F62B627EB4002000F7 /* robotHead.reality in Resources */,
 			);
@@ -473,15 +497,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EE7C8042BAD5DF700134B48 /* Audio3DView.swift in Sources */,
 				3EB016F02B625DF2002000F7 /* BlendShapeView.swift in Sources */,
 				3E2AB0C22B4D6E1800B7E741 /* RayCheckingAndGestureView.swift in Sources */,
 				3EDBF24E2B594300000AC5FF /* ImageChecking.swift in Sources */,
 				3EB016FE2B68DBC6002000F7 /* ManualEnvirmentTexturing.swift in Sources */,
+				3E3422982BB2C43D003A8233 /* Video3DView.swift in Sources */,
 				3E88882B2B5E82BE00127C96 /* ObjectChceking.swift in Sources */,
 				3EB016FC2B68A1E1002000F7 /* EnvironmentTexturing.swift in Sources */,
 				3E2AB0C42B4D6E1800B7E741 /* SpotLight.swift in Sources */,
 				3EB016FA2B678A4F002000F7 /* LightEstimate.swift in Sources */,
 				3EB016E82B610647002000F7 /* FaceChecking.swift in Sources */,
+				3E627EE72BB17AC50008D7B4 /* VideoPlayController.swift in Sources */,
 				3EDBF24C2B58F965000AC5FF /* FunctionalTechnology.swift in Sources */,
 				3ED5B3CB2B8773C5002A4F11 /* MultipeerSession.swift in Sources */,
 				3E2AB0822B4D6C6300B7E741 /* ContentView.swift in Sources */,
@@ -515,6 +542,7 @@
 				3EC4E96F2B6B43FD0032889F /* BodyTrackingView.swift in Sources */,
 				3E2AB0B92B4D6E1800B7E741 /* CheckingsPlaneShowView.swift in Sources */,
 				3E2AB0C32B4D6E1800B7E741 /* DirectionalLight.swift in Sources */,
+				3E88CE5C2BABE7E9009B98D0 /* Text3DView.swift in Sources */,
 				3E2AB0BB2B4D6E1800B7E741 /* ARCoaching.swift in Sources */,
 				3EB016F52B627EB4002000F7 /* RobotHead.swift in Sources */,
 			);
