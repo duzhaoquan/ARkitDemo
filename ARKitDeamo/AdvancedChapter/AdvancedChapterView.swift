@@ -20,7 +20,9 @@ struct AdvancedChapterView: View {
         listModel(title: "触发器与触发域", view: TriggerVolumeView()),
         listModel(title: "3D文字", view: Text3DView()),
         listModel(title: "3D音频", view: Audio3DView()),
-        listModel(title: "3D视频", view: Video3DView())
+        listModel(title: "3D视频", view: Video3DView()),
+        listModel(title: "AR Quick Look", view: ARQuickLookView())
+        
     ]
     var body: some View {
         

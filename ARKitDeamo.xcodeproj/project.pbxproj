@@ -29,6 +29,8 @@
 		3E2AB0C42B4D6E1800B7E741 /* SpotLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0B62B4D6E1800B7E741 /* SpotLight.swift */; };
 		3E2AB0C52B4D6E1800B7E741 /* GestureControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AB0B72B4D6E1800B7E741 /* GestureControlView.swift */; };
 		3E3422982BB2C43D003A8233 /* Video3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3422972BB2C43D003A8233 /* Video3DView.swift */; };
+		3E34229A2BC63100003A8233 /* ARQuickLookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3422992BC63100003A8233 /* ARQuickLookView.swift */; };
+		3E34229C2BC63EAC003A8233 /* QLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E34229B2BC63EAC003A8233 /* QLViewController.swift */; };
 		3E4CBC132BA2CBC000489A19 /* PhysicsBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4CBC122BA2CBC000489A19 /* PhysicsBodyView.swift */; };
 		3E4CBC152BA2F5C900489A19 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4CBC142BA2F5C900489A19 /* GameController.swift */; };
 		3E4CBC172BA2F86C00489A19 /* Ball.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 3E4CBC162BA2F86C00489A19 /* Ball.rcproject */; };
@@ -122,6 +124,8 @@
 		3E2AB0B62B4D6E1800B7E741 /* SpotLight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotLight.swift; sourceTree = "<group>"; };
 		3E2AB0B72B4D6E1800B7E741 /* GestureControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureControlView.swift; sourceTree = "<group>"; };
 		3E3422972BB2C43D003A8233 /* Video3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video3DView.swift; sourceTree = "<group>"; };
+		3E3422992BC63100003A8233 /* ARQuickLookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARQuickLookView.swift; sourceTree = "<group>"; };
+		3E34229B2BC63EAC003A8233 /* QLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLViewController.swift; sourceTree = "<group>"; };
 		3E4CBC122BA2CBC000489A19 /* PhysicsBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsBodyView.swift; sourceTree = "<group>"; };
 		3E4CBC142BA2F5C900489A19 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		3E4CBC162BA2F86C00489A19 /* Ball.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Ball.rcproject; sourceTree = "<group>"; };
@@ -303,6 +307,8 @@
 				3EE7C8032BAD5DF700134B48 /* Audio3DView.swift */,
 				3E627EE62BB17AC50008D7B4 /* VideoPlayController.swift */,
 				3E3422972BB2C43D003A8233 /* Video3DView.swift */,
+				3E3422992BC63100003A8233 /* ARQuickLookView.swift */,
+				3E34229B2BC63EAC003A8233 /* QLViewController.swift */,
 			);
 			path = AdvancedChapter;
 			sourceTree = "<group>";
@@ -497,8 +503,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E34229C2BC63EAC003A8233 /* QLViewController.swift in Sources */,
 				3EE7C8042BAD5DF700134B48 /* Audio3DView.swift in Sources */,
 				3EB016F02B625DF2002000F7 /* BlendShapeView.swift in Sources */,
+				3E34229A2BC63100003A8233 /* ARQuickLookView.swift in Sources */,
 				3E2AB0C22B4D6E1800B7E741 /* RayCheckingAndGestureView.swift in Sources */,
 				3EDBF24E2B594300000AC5FF /* ImageChecking.swift in Sources */,
 				3EB016FE2B68DBC6002000F7 /* ManualEnvirmentTexturing.swift in Sources */,
@@ -708,7 +716,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ARKitDeamo/Preview Content\"";
-				DEVELOPMENT_TEAM = 6245M2ZZ7W;
+				DEVELOPMENT_TEAM = Z937WL3SU5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARKitDeamo/Info.plist;
@@ -742,7 +750,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ARKitDeamo/Preview Content\"";
-				DEVELOPMENT_TEAM = 6245M2ZZ7W;
+				DEVELOPMENT_TEAM = Z937WL3SU5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARKitDeamo/Info.plist;
